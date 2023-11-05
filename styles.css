@@ -11435,3 +11435,21 @@ font-size: 16px;
 color: #0d6efd;
 }
 
+body {
+  height: 1500px; /* Apenas para ilustração, ajuste conforme o conteúdo da sua página */
+}
+
+#voltar-ao-topo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
