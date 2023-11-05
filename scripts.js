@@ -33,7 +33,6 @@ window.addEventListener('DOMContentLoaded', event => {
             botaoVoltarAoTopo.style.display = "none";
         }
     });
-
     botaoVoltarAoTopo.addEventListener("click", function() {
         // Faz a animação de rolagem suave até o topo da página
         window.scrollTo({ top: 0, behavior: "smooth" });
