@@ -32,3 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
+    // Tema escuro
+    document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('toggle-theme');
+    const themeStyle = document.getElementById('theme-style');
+
+    toggleButton.addEventListener('click', function () {
+        themeStyle.toggleAttribute('href', 'styles.css');
+        themeStyle.toggleAttribute('href', 'dark-theme.css');
+        document.body.classList.toggle('dark-theme');
+    });
+});
+
