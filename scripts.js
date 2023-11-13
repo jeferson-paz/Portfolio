@@ -38,8 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const themeStyle = document.getElementById('theme-style');
 
     toggleButton.addEventListener('click', function () {
-        themeStyle.toggleAttribute('href', 'styles.css');
-        themeStyle.toggleAttribute('href', 'dark-theme.css');
+        if (themeStyle.getAttribute('href') === 'styles.css') {
+            themeStyle.setAttribute('href', 'dark-theme.css');
+        } else {
+            themeStyle.setAttribute('href', 'styles.css');
+        }
+
         document.body.classList.toggle('dark-theme');
     });
 });
