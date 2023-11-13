@@ -1,5 +1,7 @@
+/* Definindo o conjunto de caracteres para UTF-8 */
 @charset "UTF-8";
 
+/* Definindo variáveis de cor usando a notação --bs-<cor> */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -54,18 +56,21 @@
   --bs-body-bg: #fff;
 }
 
+/* Configuração de caixa para todos os elementos e pseudo-elementos */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Configuração de rolagem suave se a preferência for redução de movimento */
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
 
+/* Configurações globais do corpo da página */
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -79,6 +84,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* Estilo para linha horizontal */
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -87,10 +93,12 @@ hr {
   opacity: 0.25;
 }
 
+/* Estilo adicional para hr sem atributo size */
 hr:not([size]) {
   height: 1px;
 }
 
+/* Estilos para cabeçalhos h1 a h6 */
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -99,76 +107,94 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
   color: #343a40;
 }
-
+/* Estilo para h1 e .h1 */
 h1, .h1 {
-  font-size: calc(1.725rem + 5.7vw);
+  font-size: calc(1.725rem + 5.7vw); /* Fórmula responsiva para tamanho de fonte baseado na largura da viewport */
 }
+
+/* Media query para h1 e .h1 em telas grandes */
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 6rem;
+    font-size: 6rem; /* Tamanho fixo para telas maiores que 1200px */
   }
 }
 
+/* Estilo para h2 e .h2 */
 h2, .h2 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.475rem + 2.7vw); /* Fórmula responsiva para tamanho de fonte baseado na largura da viewport */
 }
+
+/* Media query para h2 e .h2 em telas grandes */
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3.5rem;
+    font-size: 3.5rem; /* Tamanho fixo para telas maiores que 1200px */
   }
 }
 
+/* Estilo para h3 e .h3 */
 h3, .h3 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.325rem + 0.9vw); /* Fórmula responsiva para tamanho de fonte baseado na largura da viewport */
 }
+
+/* Media query para h3 e .h3 em telas grandes */
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2rem;
+    font-size: 2rem; /* Tamanho fixo para telas maiores que 1200px */
   }
 }
 
+/* Estilo para h4 e .h4 */
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.275rem + 0.3vw); /* Fórmula responsiva para tamanho de fonte baseado na largura da viewport */
 }
+
+/* Media query para h4 e .h4 em telas grandes */
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Tamanho fixo para telas maiores que 1200px */
   }
 }
 
+/* Estilo para h5 e .h5 */
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* Tamanho fixo */
 }
 
+/* Estilo para h6 e .h6 */
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1rem; /* Tamanho fixo */
 }
 
+/* Estilo para parágrafos (p) */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
+/* Estilo para abreviações com atributo 'title' ou 'data-bs-original-title' */
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
+/* Estilo para elementos de endereço */
 address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
 }
 
+/* Estilo para listas ordenadas (ol) e não ordenadas (ul) */
 ol,
 ul {
   padding-left: 2rem;
 }
 
+/* Estilo para listas ordenadas (ol), não ordenadas (ul) e listas de definição (dl) */
 ol,
 ul,
 dl {
@@ -176,40 +202,47 @@ dl {
   margin-bottom: 1rem;
 }
 
+/* Estilo para listas dentro de listas */
 ol ol,
 ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
 }
-
+/* Estilo para termos de definição (dt) */
 dt {
-  font-weight: 700;
+  font-weight: 700; /* Peso da fonte para destacar termos de definição */
 }
 
+/* Estilo para descrições de definição (dd) */
 dd {
   margin-bottom: 0.5rem;
-  margin-left: 0;
+  margin-left: 0; /* Remover margem à esquerda para alinhar com o termo */
 }
 
+/* Estilo para citações em bloco (blockquote) */
 blockquote {
-  margin: 0 0 1rem;
+  margin: 0 0 1rem; /* Adicionar margens para separar das seções adjacentes */
 }
 
+/* Estilo para texto em negrito (b, strong) */
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bolder; /* Aumentar o peso da fonte para negrito */
 }
 
+/* Estilo para texto pequeno (small) */
 small, .small {
-  font-size: 0.875em;
+  font-size: 0.875em; /* Reduzir o tamanho da fonte */
 }
 
+/* Estilo para marcação (mark) */
 mark, .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: #fcf8e3; /* Fundo amarelo para destacar */
 }
 
+/* Estilo para subscrito (sub) e sobrescrito (sup) */
 sub,
 sup {
   position: relative;
@@ -218,37 +251,46 @@ sup {
   vertical-align: baseline;
 }
 
+/* Ajustes para subscrito (sub) */
 sub {
   bottom: -0.25em;
 }
 
+/* Ajustes para sobrescrito (sup) */
 sup {
   top: -0.5em;
 }
 
+/* Estilo para links (a) */
 a {
-  color:#0d6efd;
-  text-decoration: underline;
+  color: #0d6efd; /* Cor azul para links */
+  text-decoration: underline; /* Adicionar sublinhado */
 }
+
+/* Estilo para links (a) ao passar o mouse */
 a:hover {
-  color: #373b3e;
+  color: #373b3e; /* Cor alterada ao passar o mouse */
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
+/* Estilo para links sem href ou classe */
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit; /* Herdar a cor do texto */
+  text-decoration: none; /* Remover sublinhado */
 }
 
+/* Estilo para elementos de código (pre, code, kbd, samp) */
 pre,
 code,
 kbd,
 samp {
   font-family: var(--bs-font-monospace);
   font-size: 1em;
-  direction: ltr /* rtl:ignore */;
+  direction: ltr;
   unicode-bidi: bidi-override;
 }
 
+/* Estilo para blocos de código (pre) */
 pre {
   display: block;
   margin-top: 0;
@@ -256,48 +298,60 @@ pre {
   overflow: auto;
   font-size: 0.875em;
 }
+
+/* Estilo para código dentro de blocos de código (pre code) */
 pre code {
   font-size: inherit;
   color: inherit;
   word-break: normal;
 }
 
+/* Estilo para código em linha (code) */
 code {
   font-size: 0.875em;
-  color: #d63384;
+  color: #d63384; /* Cor rosa para código em linha */
   word-wrap: break-word;
 }
+
+/* Estilo para código dentro de links (a > code) */
 a > code {
   color: inherit;
 }
 
+/* Estilo para teclas do teclado (kbd) */
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 0.875em;
-  color: #fff;
-  background-color: #212529;
+  color: #fff; /* Cor do texto para kbd */
+  background-color: #212529; /* Cor de fundo para kbd */
   border-radius: 0.2rem;
 }
+
+/* Ajustes para kbd dentro de kbd */
 kbd kbd {
   padding: 0;
   font-size: 1em;
   font-weight: 700;
 }
 
+/* Estilo para figuras (figure) */
 figure {
   margin: 0 0 1rem;
 }
 
+/* Estilo para alinhar verticalmente imagens e SVGs (img, svg) */
 img,
 svg {
   vertical-align: middle;
 }
 
+/* Estilo para tabelas (table) */
 table {
   caption-side: bottom;
   border-collapse: collapse;
 }
 
+/* Estilo para título de tabela (caption) */
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -305,11 +359,13 @@ caption {
   text-align: left;
 }
 
+/* Estilo para cabeçalhos de tabela (th) */
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
 
+/* Estilo para elementos de tabela (thead, tbody, tfoot, tr, td, th) */
 thead,
 tbody,
 tfoot,
@@ -321,18 +377,22 @@ th {
   border-width: 0;
 }
 
+/* Estilo para rótulos (label) */
 label {
   display: inline-block;
 }
 
+/* Estilo para botões (button) */
 button {
-  border-radius: 0;
+  border-radius: 0; /* Remover borda arredondada nos botões */
 }
 
+/* Remover foco do botão quando não está visível no teclado */
 button:focus:not(:focus-visible) {
   outline: 0;
 }
 
+/* Estilo para elementos de formulário (input, button, select, optgroup, textarea) */
 input,
 button,
 select,
@@ -344,72 +404,89 @@ textarea {
   line-height: inherit;
 }
 
+/* Estilo para transformação de texto nos botões e seleções */
 button,
 select {
   text-transform: none;
 }
-
+/* Estilo para elementos com atributo role=button */
 [role=button] {
-  cursor: pointer;
+  cursor: pointer; /* Cursor de ponteiro para indicar interatividade */
 }
 
+/* Estilo para elementos select */
 select {
-  word-wrap: normal;
-}
-select:disabled {
-  opacity: 1;
+  word-wrap: normal; /* Desabilitar quebra de palavra para texto longo em selects */
 }
 
+/* Estilo para selects desabilitados */
+select:disabled {
+  opacity: 1; /* Opacidade total para selects desabilitados */
+}
+
+/* Remover o indicador do seletor de data do Chrome */
 [list]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
+/* Estilo para botões e elementos do tipo button, reset e submit */
 button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  -webkit-appearance: button; /* Aparência de botão para melhor consistência */
 }
+
+/* Estilo para botões e elementos do tipo button, reset e submit não desabilitados */
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
-  cursor: pointer;
+  cursor: pointer; /* Cursor de ponteiro para elementos não desabilitados */
 }
 
+/* Remover o estilo padrão do Firefox para o botão interno de foco */
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;
 }
 
+/* Estilo para textarea com redimensionamento vertical */
 textarea {
   resize: vertical;
 }
 
+/* Estilo para fieldset */
 fieldset {
-  min-width: 0;
+  min-width: 0; /* Garantir que o fieldset tenha uma largura mínima */
   padding: 0;
   margin: 0;
   border: 0;
 }
 
+/* Estilo para legenda de fieldset */
 legend {
-  float: left;
+  float: left; /* Alinhar a legenda à esquerda */
   width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.275rem + 0.3vw); /* Tamanho de fonte responsivo */
   line-height: inherit;
 }
+
+/* Media query para ajuste do tamanho da legenda em telas grandes */
 @media (min-width: 1200px) {
   legend {
     font-size: 1.5rem;
   }
 }
+
+/* Limpar float após a legenda */
 legend + * {
   clear: left;
 }
 
+/* Estilos para elementos de edição de data e hora no Chrome */
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
@@ -420,181 +497,217 @@ legend + * {
   padding: 0;
 }
 
+/* Estilo para o botão de rotação interno em inputs numéricos no Chrome */
 ::-webkit-inner-spin-button {
   height: auto;
 }
 
+/* Estilo para o input[type=search] */
 [type=search] {
-  outline-offset: -2px;
-  -webkit-appearance: textfield;
+  outline-offset: -2px; /* Ajustar a posição da borda ao focar */
+  -webkit-appearance: textfield; /* Aparência de campo de texto no Safari */
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
+/* Estilo para a barra de pesquisa no Chrome */
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* Remover a decoração padrão de pesquisa */
 }
 
+/* Estilo para o seletor de cor no Chrome */
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
+/* Estilo para o botão de upload de arquivo no Chrome */
 ::-webkit-file-upload-button {
   font: inherit;
 }
 
+/* Estilo para o botão de seleção de arquivo */
 ::file-selector-button {
   font: inherit;
 }
 
+/* Estilo adicional para o botão de upload de arquivo no Chrome */
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
 }
 
+/* Estilo para o elemento output */
 output {
-  display: inline-block;
+  display: inline-block; /* Exibir como bloco inline */
 }
 
+/* Estilo para elementos iframe */
 iframe {
-  border: 0;
+  border: 0; /* Remover a borda padrão do iframe */
 }
 
+/* Estilo para o elemento summary */
 summary {
-  display: list-item;
-  cursor: pointer;
+  display: list-item; /* Exibir como item de lista */
+  cursor: pointer; /* Cursor de ponteiro para indicar interatividade */
 }
 
+/* Estilo para o elemento progress */
 progress {
-  vertical-align: baseline;
+  vertical-align: baseline; /* Alinhar à linha de base */
 }
 
+/* Estilo para elementos com atributo hidden */
 [hidden] {
-  display: none !important;
+  display: none !important; /* Esconder elementos com atributo hidden */
 }
-
+/* Estilo para texto de destaque (.lead) */
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
 }
 
+/* Estilo para texto de exibição 1 (.display-1) */
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
   line-height: 1.2;
 }
+
+/* Media query para ajuste em telas grandes para .display-1 */
 @media (min-width: 1200px) {
   .display-1 {
     font-size: 5rem;
   }
 }
 
+/* Estilo para texto de exibição 2 (.display-2) */
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
   font-weight: 300;
   line-height: 1.2;
 }
+
+/* Media query para ajuste em telas grandes para .display-2 */
 @media (min-width: 1200px) {
   .display-2 {
     font-size: 4.5rem;
   }
 }
 
+/* Estilo para texto de exibição 3 (.display-3) */
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
   font-weight: 300;
   line-height: 1.2;
 }
+
+/* Media query para ajuste em telas grandes para .display-3 */
 @media (min-width: 1200px) {
   .display-3 {
     font-size: 4rem;
   }
 }
 
+/* Estilo para texto de exibição 4 (.display-4) */
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 300;
   line-height: 1.2;
 }
+
+/* Media query para ajuste em telas grandes para .display-4 */
 @media (min-width: 1200px) {
   .display-4 {
     font-size: 3.5rem;
   }
 }
 
+/* Estilo para texto de exibição 5 (.display-5) */
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 300;
   line-height: 1.2;
 }
+
+/* Media query para ajuste em telas grandes para .display-5 */
 @media (min-width: 1200px) {
   .display-5 {
     font-size: 3rem;
   }
 }
 
+/* Estilo para texto de exibição 6 (.display-6) */
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: 300;
   line-height: 1.2;
 }
+
+/* Media query para ajuste em telas grandes para .display-6 */
 @media (min-width: 1200px) {
   .display-6 {
     font-size: 2.5rem;
   }
 }
 
+/* Estilo para lista sem estilo (.list-unstyled) */
 .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
 
+/* Estilo para lista em linha (.list-inline) */
 .list-inline {
   padding-left: 0;
   list-style: none;
 }
 
+/* Estilo para itens de lista em linha (.list-inline-item) */
 .list-inline-item {
   display: inline-block;
 }
+
+/* Margem direita para itens de lista em linha, exceto o último (.list-inline-item:not(:last-child)) */
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
 
+/* Estilo para siglas (.initialism) */
 .initialism {
   font-size: 0.875em;
   text-transform: uppercase;
 }
 
+/* Estilo para citação em bloco (.blockquote) */
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
+
+/* Margem inferior para o último elemento filho da citação em bloco (.blockquote > :last-child) */
 .blockquote > :last-child {
   margin-bottom: 0;
 }
 
+/* Estilo para o rodapé da citação em bloco (.blockquote-footer) */
 .blockquote-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
   color: #6c757d;
 }
+
+/* Adicionar um travessão antes do texto do rodapé da citação em bloco (.blockquote-footer::before) */
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
+/* Estilo para imagens fluidas (.img-fluid) */
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 
+/* Estilo para imagens em miniatura (.img-thumbnail) */
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -604,20 +717,24 @@ progress {
   height: auto;
 }
 
+/* Estilo para figura (.figure) */
 .figure {
   display: inline-block;
 }
 
+/* Estilo para imagem dentro de uma figura (.figure-img) */
 .figure-img {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
 
+/* Estilo para legenda de figura (.figure-caption) */
 .figure-caption {
   font-size: 0.875em;
   color: #6c757d;
 }
 
+/* Estilo para contêineres responsivos (.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm) */
 .container,
 .container-fluid,
 .container-xxl,
