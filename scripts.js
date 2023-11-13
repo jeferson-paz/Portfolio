@@ -31,18 +31,3 @@ document.addEventListener('DOMContentLoaded', function () {
         // Rola suavemente até o topo da página
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
-
-    // Tema escuro
-    const toggleButton = document.getElementById('toggle-theme');
-    const themeStyle = document.getElementById('theme-style');
-
-    toggleButton.addEventListener('click', function () {
-        if (themeStyle.getAttribute('href') === 'styles.css') {
-            themeStyle.setAttribute('href', 'dark-theme.css');
-        } else {
-            themeStyle.setAttribute('href', 'styles.css');
-        }
-
-        document.body.classList.toggle('dark-theme');
-    });
-});
