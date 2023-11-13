@@ -38,3 +38,16 @@ window.addEventListener('DOMContentLoaded', event => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const themeToggle = document.getElementById('toggle-theme');
+    const themeStyle = document.getElementById('theme-style');
+
+    themeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-theme');
+        const isDarkTheme = document.body.classList.contains('dark-theme');
+
+        // Alterna entre as folhas de estilo com base no tema atual
+        themeStyle.href = isDarkTheme ? 'dark-theme.css' : 'styles.css';
+    });
+});
