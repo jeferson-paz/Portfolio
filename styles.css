@@ -325,14 +325,3 @@ footer {
 .rodape a:hover {
   text-decoration: underline; /* Efeito ao passar o mouse sobre os links */
 }
-/* Estilos para o modo claro */
-body {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Estilos para o modo escuro */
-body.dark-mode {
-  background-color: #333333;
-  color: #ffffff;
-}
