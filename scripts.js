@@ -39,3 +39,24 @@ window.addEventListener('DOMContentLoaded', event => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
+// Função para alternar entre os modos claro e escuro
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+// Recupera a preferência do usuário do armazenamento local
+const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+// Aplica o modo escuro se a preferência estiver ativada
+if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+}
+
+// Função para alternar entre os modos claro e escuro e persistir a escolha
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    
+    // Salva a preferência do usuário no armazenamento local
+    localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+}
