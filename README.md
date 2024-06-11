@@ -1,6 +1,6 @@
 # Portfolio
 
-💡**Bem-vindo ao Meu Portfolio Inicial de Análise de Dados!**
+💡**Bem-vindo ao Meu Portfolio!**
 
 Em meu portfolio, estou começando minha jornada na análise de dados e estou entusiasmado para compartilhar meu progresso e aprendizado contínuo. Embora ainda esteja nos estágios iniciais, este espaço é dedicado à exploração curiosa e à busca por insights nos dados.
 
