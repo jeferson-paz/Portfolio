@@ -2310,3 +2310,14 @@ body {
     height: 40px;
     cursor: pointer
 }
+.footer {
+    text-align: center;
+    background-color: #232637;
+    color: white;
+    padding: 20px 0;
+}
+
+.visitor-badge {
+    display: inline-block;
+    margin-top: 10px;
+}
