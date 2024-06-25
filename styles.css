@@ -2327,27 +2327,26 @@ body {
     max-width: 50%;  /* Define a largura máxima do carrossel */
     height: 300px;   /* Define a altura do carrossel */
     margin: auto;    /* Centraliza o carrossel na página */
-  }
-  
+}
+
   /* Ajusta a altura das imagens no carrossel */
-  #carouselExampleCaptions .carousel-inner img {
+#carouselExampleCaptions .carousel-inner img {
     height: 100%;    /* Faz com que as imagens preencham a altura do carrossel */
     object-fit: cover;  /* Ajusta a imagem para cobrir o espaço do carrossel */
-  }
-  
+}
+
   /* Ajusta a legenda para o tamanho do carrossel */
-  #carouselExampleCaptions .carousel-caption {
+#carouselExampleCaptions .carousel-caption {
     bottom: 20px;  /* Ajusta a posição da legenda */
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     #carouselExampleCaptions {
       max-width: 100%;  /* Define a largura máxima do carrossel para 100% em dispositivos móveis */
       height: 200px;    /* Define a altura do carrossel para dispositivos móveis */
     }
-  
+
     #carouselExampleCaptions .carousel-inner img {
       height: 100%;  /* Mantém as imagens ajustadas para a altura do carrossel */
     }
-  }
-  
+}
