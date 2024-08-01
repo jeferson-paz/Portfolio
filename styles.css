@@ -2586,7 +2586,7 @@ body {
     color: #fff; /* Define a cor do texto como branco */
     font-family: 'Muli', sans-serif; /* Define a família da fonte */
     margin: 20px; /* Define a margem como 20px */
-    padding: 20px; /* Define o preenchimento interno como 20px */
+    padding: 20,0%; /* Define o preenchimento interno como 20px */
 }
 
 a {
