@@ -1,37 +1,62 @@
-// scripts.js
+window.addEventListener('DOMContentLoaded', event => {
+    // Código que precisa esperar pelo DOM estar pronto vai aqui
 
-// Smooth scrolling for internal links
-document.querySelectorAll('a.js-scroll-trigger').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    // Lógica para inicializar o ScrollSpy (assumindo que você já importou Bootstrap)
+    const sideNav = document.body.querySelector('#sideNav');
+    if (sideNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#sideNav',
+            offset: 74,
+        });
+    }
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+    // Lógica para fechar o menu responsivo ao clicar em um item de navegação
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = Array.from(document.querySelectorAll('#navbarResponsive .nav-link'));
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
         });
     });
-});
 
-// Show "back to top" button when scrolling down
-window.addEventListener('scroll', function () {
-    const scrollButton = document.getElementById('voltar-ao-topo');
-    if (window.scrollY > 200) {
-        scrollButton.style.display = 'block';
-    } else {
-        scrollButton.style.display = 'none';
-    }
-});
+    // Lógica para o botão de "voltar ao topo"
+    var botaoVoltarAoTopo = document.getElementById("voltar-ao-topo");
 
-// Scroll to top when "back to top" button is clicked
-document.getElementById('voltar-ao-topo').addEventListener('click', function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+    window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 200) {
+            // Mostra o botão quando o usuário rolar 200 pixels para baixo
+            botaoVoltarAoTopo.style.display = "block";
+        } else {
+            // Oculta o botão quando o usuário estiver no topo da página
+            botaoVoltarAoTopo.style.display = "none";
+        }
+    });
+
+    botaoVoltarAoTopo.addEventListener("click", function() {
+        // Faz a animação de rolagem suave até o topo da página
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
+// Função para alternar entre os modos claro e escuro
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+// Recupera a preferência do usuário do armazenamento local
+const isDarkMode = localStorage.getItem('darkMode') === 'true';
 
-// Carousel functionality
-var carousel = document.querySelector('#carouselExampleCaptions');
-var carouselInstance = new bootstrap.Carousel(carousel, {
-    interval: 2000,
-    wrap: true
-});
+// Aplica o modo escuro se a preferência estiver ativada
+if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+}
+
+// Função para alternar entre os modos claro e escuro e persistir a escolha
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    
+    // Salva a preferência do usuário no armazenamento local
+    localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+}
