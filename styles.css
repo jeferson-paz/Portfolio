@@ -2336,18 +2336,17 @@ body {
 }
 
   /* Ajusta a legenda para o tamanho do carrossel */
-  #carouselExampleCaptions .carousel-caption {
+#carouselExampleCaptions .carousel-caption {
     bottom: 20px;  /* Ajusta a posição da legenda */
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     #carouselExampleCaptions {
       max-width: 100%;  /* Define a largura máxima do carrossel para 100% em dispositivos móveis */
       height: 200px;    /* Define a altura do carrossel para dispositivos móveis */
     }
-  
+
     #carouselExampleCaptions .carousel-inner img {
       height: 100%;  /* Mantém as imagens ajustadas para a altura do carrossel */
     }
-  }
-  
+}
