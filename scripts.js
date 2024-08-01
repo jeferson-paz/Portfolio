@@ -23,7 +23,6 @@ window.addEventListener('scroll', function () {
 
 // Scroll to top when "back to top" button is clicked
 document.getElementById('voltar-ao-topo').addEventListener('click', function () {
-    console.log('Botão clicado!');
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -31,10 +30,8 @@ document.getElementById('voltar-ao-topo').addEventListener('click', function () 
 });
 
 // Carousel functionality
-document.addEventListener('DOMContentLoaded', function () {
-    var carousel = document.querySelector('#carouselExampleCaptions');
-    var carouselInstance = new bootstrap.Carousel(carousel, {
-        interval: 2000,
-        wrap: true
-    });
+var carousel = document.querySelector('#carouselExampleCaptions');
+var carouselInstance = new bootstrap.Carousel(carousel, {
+    interval: 2000,
+    wrap: true
 });
