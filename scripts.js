@@ -23,6 +23,7 @@ window.addEventListener('scroll', function () {
 
 // Scroll to top when "back to top" button is clicked
 document.getElementById('voltar-ao-topo').addEventListener('click', function () {
+    console.log('Botão clicado!');
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
