@@ -2415,6 +2415,11 @@ a:hover {
     border-radius: 10px;
 }
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
 
 .footer {
     background-color: #222;
