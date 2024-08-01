@@ -2651,7 +2651,7 @@ a:hover {
 .footer {
     background-color: #222; /* Define a cor de fundo do rodapé como cinza escuro */
     color: #bbb; /* Define a cor do texto do rodapé como cinza claro */
-    padding: 20px 0; /* Define o preenchimento superior e inferior como 20px */
+    padding: 20px,0; /* Define o preenchimento superior e inferior como 20px */
     text-align: center; /* Alinha o texto ao centro */
 }
 
