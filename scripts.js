@@ -30,8 +30,10 @@ document.getElementById('voltar-ao-topo').addEventListener('click', function () 
 });
 
 // Carousel functionality
-var carousel = document.querySelector('#carouselExampleCaptions');
-var carouselInstance = new bootstrap.Carousel(carousel, {
-    interval: 2000,
-    wrap: true
+document.addEventListener('DOMContentLoaded', function () {
+    var carousel = document.querySelector('#carouselExampleCaptions');
+    var carouselInstance = new bootstrap.Carousel(carousel, {
+        interval: 2000,
+        wrap: true
+    });
 });
