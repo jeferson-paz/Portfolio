@@ -2350,3 +2350,106 @@ body {
       height: 100%;  /* Mantém as imagens ajustadas para a altura do carrossel */
     }
 }
+
+
+/* TESTE*/
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    margin: 20;
+    padding: 20;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00bfff;
+}
+
+.navbar {
+    background-color: #222;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #ddd;
+}
+
+.nav-item .nav-link {
+    color: #bbb;
+}
+
+.nav-item .nav-link:hover {
+    color: #fff;
+}
+
+.img-profile {
+    border: 2px solid #fff;
+}
+
+.resume-section {
+    padding: 50px 0;
+}
+
+.resume-section h1,
+.resume-section h2 {
+    color: #1e90ff;
+}
+
+.resume-section h3,
+.resume-section h5 {
+    color: #00bfff;
+}
+
+.resume-section-content {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.btn-social {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-social:hover {
+    background-color: #555;
+}
+
+#voltar-ao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#voltar-ao-topo:hover {
+    background-color: #00bfff;
+}
