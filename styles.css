@@ -42,7 +42,6 @@
     src: url(https://fonts.gstatic.com/s/muli/v29/7Aulp_0qiz-aVz7u3PJLcUMYOFlOl0k30e0.ttf) format('truetype')
 }
 
-
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -295,7 +294,9 @@ button {
 [type=reset],
 [type=submit],
 button {
-    -webkit-appearance: button
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
 }
 
 [type=button]:not(:disabled),
@@ -322,11 +323,6 @@ button:not(:disabled) {
 
 ::-webkit-inner-spin-button {
     height: auto
-}
-
-[type=search] {
-    outline-offset: -2px;
-    -webkit-appearance: textfield
 }
 
 ::-webkit-search-decoration {
