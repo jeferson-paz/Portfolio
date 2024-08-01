@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
     font-family: 'Saira Extra Condensed';
     font-style: normal;
@@ -40,7 +42,6 @@
     src: url(https://fonts.gstatic.com/s/muli/v29/7Aulp_0qiz-aVz7u3PJLcUMYOFlOl0k30e0.ttf) format('truetype')
 }
 
-@charset "UTF-8";
 
 :root {
     --bs-blue: #0d6efd;
