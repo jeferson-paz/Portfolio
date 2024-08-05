@@ -168,3 +168,10 @@ footer p {
         font-size: 1.2rem;
     }
 }
+
+.img-small {
+        width: 80%; /* Ajuste o valor conforme necessário */
+        max-width: 600px; /* Ajuste o valor conforme necessário */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
