@@ -214,12 +214,16 @@ body {
     margin-bottom: 15px;
 }
 
-.profile img {
+.profile-pic {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-right: 15px;
     border: 2px solid #555;
+}
+
+.profile-info {
+    flex-grow: 1;
 }
 
 .profile-info h3 {
@@ -230,6 +234,12 @@ body {
 .profile-info p {
     margin: 0;
     color: #aaa;
+}
+
+.company-logo {
+    width: 50px;
+    height: auto;
+    margin-top: 5px;
 }
 
 .recommendation-text {
