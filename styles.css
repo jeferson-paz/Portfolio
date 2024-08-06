@@ -175,3 +175,64 @@ footer p {
         height: auto; /* Mantém a proporção da imagem */
 }
 
+/** Recomendações**/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.recommendations-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.recommendations-section h2 {
+    text-align: center;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.recommendation-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #555;
+}
+
+.profile-info h3 {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.profile-info p {
+    margin: 0;
+    color: #aaa;
+}
+
+.recommendation-text {
+    font-style: italic;
+    color: #ccc;
+}
