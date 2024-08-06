@@ -224,6 +224,8 @@ body {
 
 .profile-info {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-info h3 {
@@ -242,6 +244,15 @@ body {
     margin-top: 5px;
 }
 
+.linkedin-link {
+    margin-top: 10px;
+}
+
+.linkedin-link img {
+    width: 24px;
+    height: 24px;
+}
+ 
 .recommendation-text {
     font-style: italic;
     color: #ccc;
