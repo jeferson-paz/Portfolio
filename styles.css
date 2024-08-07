@@ -170,21 +170,12 @@ footer p {
 }
 
 .img-small {
-        width: 80%; /* Ajuste o valor conforme necessário */
-        max-width: 600px; /* Ajuste o valor conforme necessário */
-        height: auto; /* Mantém a proporção da imagem */
+    width: 80%; /* Ajuste o valor conforme necessário */
+    max-width: 600px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-/** Recomendações**/
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-}
-
+/** Recomendações **/
 .recommendations-section {
     max-width: 800px;
     margin: 50px auto;
