@@ -176,8 +176,9 @@ footer p {
 }
 
 /** Recomendações **/
+
 .recommendations-section {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
     background-color: #1e1e1e;
@@ -191,12 +192,25 @@ footer p {
     margin-bottom: 30px;
 }
 
+.recommendation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .recommendation-card {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #333;
-    border-radius: 8px;
     background-color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta para 3 cartões por linha */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(33.333% - 20px);
+    margin-bottom: 20px;
 }
 
 .profile {
@@ -247,65 +261,19 @@ footer p {
 .recommendation-text {
     font-style: italic;
     color: #ccc;
-}
-
-.recommendations-section {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.recommendation-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.recommendation-card {
-    background-color: #2e2e2e;
-    border: 1px solid #2e2e2e;
-    border-radius: 8px;
-    padding: 20px;
-    box-sizing: border-box;
-    flex: 1 1 calc(33.333% - 20px); /* Ajusta para 3 cartões por linha */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-}
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.company-link, .linkedin-link {
-    margin-top: 5px;
-}
-
-.company-logo {
-    width: 30px;
-    height: 30px;
-}
-
-.linkedin-link img {
-    width: 20px;
-    height: 20px;
-}
-
-.recommendation-text {
-    margin-top: 10px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .recommendation-card {
+        flex: 1 1 calc(50% - 20px); /* Ajusta para 2 cartões por linha em telas menores */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .recommendation-card {
+        flex: 1 1 100%; /* Ajusta para 1 cartão por linha em telas muito pequenas */
+        max-width: 100%;
+    }
 }
