@@ -175,28 +175,35 @@ footer p {
     height: auto; /* Mantém a proporção da imagem */
 }
 
-/** Recomendações **/
+/* Estilos para a seção de recomendações */
 .recommendations-section {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #1e1e1e;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
+    padding: 40px 20px;
+    background-color: 0 4px 8px rgba(0, 0, 0, 0.2); ;
+    text-align: center;
 }
 
 .recommendations-section h2 {
-    text-align: center;
-    color: #e0e0e0;
-    margin-bottom: 30px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #c0c0c0;
+}
+
+.recommendation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .recommendation-card {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #333;
+    background-color: #c0c0c0;
     border-radius: 8px;
-    background-color: #2e2e2e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: left;
+    margin: 10px;
+    position: relative;
 }
 
 .profile {
@@ -206,98 +213,38 @@ footer p {
 }
 
 .profile-pic {
+    border-radius: 50%;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    object-fit: cover;
     margin-right: 15px;
-    border: 2px solid #555;
 }
 
 .profile-info {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
 .profile-info h3 {
     margin: 0;
-    color: #e0e0e0;
+    font-size: 1.2em;
+    color: #333;
 }
 
 .profile-info p {
     margin: 0;
-    color: #aaa;
-}
-
-.company-logo {
-    width: 50px;
-    height: auto;
-    margin-top: 5px;
-}
-
-.linkedin-link {
-    margin-top: 10px;
-}
-
-.linkedin-link img {
-    width: 24px;
-    height: 24px;
-}
-
-.recommendation-text {
-    font-style: italic;
-    color: #ccc;
-}
-
-.recommendations-section {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.recommendation-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.recommendation-card {
-    background-color: #2e2e2e;
-    border: 1px solid #2e2e2e;
-    border-radius: 8px;
-    padding: 20px;
-    box-sizing: border-box;
-    flex: 1 1 calc(33.333% - 20px); /* Ajusta para 3 cartões por linha */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-}
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    color: #777;
 }
 
 .company-link, .linkedin-link {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .company-logo {
     width: 30px;
     height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 .linkedin-link img {
@@ -306,6 +253,7 @@ footer p {
 }
 
 .recommendation-text {
-    margin-top: 10px;
-    text-align: center;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
 }
