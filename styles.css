@@ -127,31 +127,30 @@ footer p {
     vertical-align: middle;
 }
 
-/* Botão de Voltar ao Topo */
+/* Estilos para o botão de voltar ao topo */
 .btn-back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
-    color: #ffffff;
-    border: none;
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto (ícone) */
+    padding: 10px 15px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-    display: none; /* Ocultar por padrão */
+    transition: background-color 0.3s ease;
 }
 
 .btn-back-to-top:hover {
-    background-color: #555;
+    background-color: #555; /* Cor de fundo ao passar o mouse */
 }
 
 .btn-back-to-top i {
-    font-size: 1.2rem;
+    margin: 0;
 }
 
 /* Responsividade */
