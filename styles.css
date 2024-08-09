@@ -327,7 +327,7 @@ footer p {
 
 .profile-info p {
     margin: 0; /* Remove margem padrão */
-    color: #555; /* Cor do texto da descrição */
+    color: #fff; /* Cor do texto da descrição */
 }
 
 .company-link, .linkedin-link {
