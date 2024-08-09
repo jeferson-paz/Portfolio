@@ -397,3 +397,44 @@ footer p {
     text-align: center;
     margin-top: 50px;
 }
+
+ /* Estilo básico para a seção de estudo */
+ .studying-section {
+    background-color: #2c2c2c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+}
+
+.studying-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.studying-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.studying-list li {
+    background-color: #3a3a3a;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: #d0d0d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.study-time {
+    font-size: 16px;
+    color: #b0b0b0;
+}
