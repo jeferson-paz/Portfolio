@@ -322,7 +322,7 @@ footer p {
 .profile-info h3 {
     margin: 0; /* Remove margem padrão */
     font-size: 1.2em; /* Tamanho do texto do nome */
-    color: #fff; /* Cor do texto do nome */
+    color: #333; /* Cor do texto do nome */
 }
 
 .profile-info p {
