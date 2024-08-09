@@ -11,8 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700|Muli:400,400i,800,800i" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body id="page-top">
     <!-- Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -25,112 +27,136 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projetos">Projetos</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#formacao">Formação</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tecnologias">Tecnologias</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#recomendacoes">Recomendações</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container hero-content">
-            <div class="profile-circle">
-                <img src="profile.png" alt="Jeferson Paz">
-            </div>
-            <div class="hero-text">
-                <h1>Jeferson Paz</h1>
-                <p>Analista de Dados</p>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-box">
+    <div class="container hero-content">
+        <div class="profile-circle">
+            <img src="img/foto.jpeg" alt="Jeferson Paz">
+        </div>
+        <div class="hero-text">
+            <h1>Jeferson Paz</h1>
+            <p class="title-box">Analista de Dados</p>
+            <!-- Move os ícones sociais para dentro da hero-text -->
+            <div class="social-icons">
+                <div class="d-flex justify-content-center">
+                    <a href="https://github.com/jeferson-paz" target="_blank" aria-label="GitHub"><img src="https://img.icons8.com/ios/50/ffffff/github.png" class="footer-icon" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/jeferson-paz/" target="_blank" aria-label="LinkedIn"><img src="https://img.icons8.com/ios/50/ffffff/linkedin.png" class="footer-icon" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/jeferson.paz_/" target="_blank" aria-label="Instagram"><img src="https://img.icons8.com/ios/50/ffffff/instagram-new.png" class="footer-icon" alt="Instagram"></a>
+                    <a href="https://api.whatsapp.com/send?phone=21969024717&text=Olá,%20gostaria%20de%20conversar%20sobre%20o%20seu%20portfólio!" target="_blank" aria-label="WhatsApp"><img src="https://img.icons8.com/ios/50/ffffff/whatsapp.png" class="footer-icon" alt="WhatsApp"></a>
+                    <a href="mailto:goncalvespazn@outlook.com" aria-label="E-mail"><img src="https://img.icons8.com/ios/50/ffffff/mail.png" class="footer-icon" alt="E-mail"></a>
+                </div>
             </div>
         </div>
-    </section>
+</section>
 
     <!-- Conteúdo -->
     <div class="container">
+        
         <!-- Sobre Section -->
         <section id="sobre">
             <h2>Sobre</h2>
             <p>Com mais de 7 anos de experiência em Tecnologia da Informação, tracei uma trajetória sólida desde o suporte direto aos usuários até o gerenciamento de chamados e suporte técnico. Sou Analista de Dados com MBA em Big Data e Inteligência Competitiva, ampliando minha expertise em gerenciamento de tickets no Service Now e JIRA Service Desk, além de modelagem de dados e processos ETL em projetos de auditoria. Possuo habilidades avançadas em Python, SQL, R, Power BI e IA.</p>
-
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/jeferson-paz/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/jeferson-paz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/jeferson.paz_/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=21969024717&text=Olá,%20gostaria%20de%20conversar%20sobre%20o%20seu%20portfólio!" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="mailto:paz.jefferson@outlook.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
-            </div>
         </section>
 
-        <!-- Projetos Section -->
+<!-- Projetos -->
 <section id="projetos">
     <h2>Projetos</h2>
-    <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Projetos Visíveis -->
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="card mb-4 text-center">
-                        <img src="img/Dashboard_Analitico_de_Vendas_Globais.png" class="card-img-top mx-auto img-small" alt="Projeto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Dashboard Analítico de Vendas Globais</h5>
-                            <p class="card-text">Este dashboard fornece uma análise detalhada das vendas globais, permitindo identificar padrões, tendências e insights valiosos para tomada de decisão. Com ele, é possível entender melhor o desempenho de vendas por categoria de produto, país e outras dimensões relevantes.</p>
-                            <a href="https://jeferson-paz.github.io/Dashboard/" class="btn btn-primary btn-interactive" target="_blank">Ver mais</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="project-container">
+        <div class="project">
+            <div class="project-header">
+                <img src="img/MicrosoftPowerBI.png" alt="Porwer BI" class="project-icon">
+                <h3 class="project-title">Dashboard Analítico de Vendas Globais</h3>
             </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="card mb-4 text-center">
-                        <img src="img/Dashboard_de_Vendas_Custo_Custo_Margem_de_Lucro_e_KPI_atualizado.png" class="card-img-top mx-auto img-small" alt="Projeto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Dashboard de Vendas, Custo, Margem de Lucro e KPI</h5>
-                            <p class="card-text">Este projeto visa analisar e visualizar dados de vendas e logística de uma empresa, com foco em identificar insights chave sobre o desempenho de vendas, custos de envio e margens de lucro. Utilizando o Power BI, as seguintes perguntas foram exploradas e respondidas através de gráficos e indicadores visuais</p>
-                            <a href="https://jeferson-paz.github.io/Dashboard-2/" class="btn btn-primary btn-interactive" target="_blank">Ver mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Novo Projeto -->
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="card mb-4 text-center">
-                        <img src="img/output.png" class="card-img-top mx-auto img-small" alt="Novo Projeto">
-                        <div class="card-body">
-                            <h5 class="card-title">Análise Exploratória de Dados em Linguagem Python Para a Área de Varejo</h5>
-                            <p class="card-text">Nesta análise exploratória de dados, focamos em diversas perguntas de negócio cruciais para a área de varejo, utilizando ferramentas avançadas de visualização em Python.</p>
-                            <a href="https://jeferson-paz.github.io/Analise-de-Dados-Varejo/An%C3%A1lise%20Explorat%C3%B3ria%20de%20Dados%20em%20Linguagem%20Python%20Para%20a%20%C3%81rea%20de%20Varejo.html" class="btn btn-primary btn-interactive" target="_blank">Ver mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="project-description">
+                Este Dashboard foi criado através do curso gratuito da Data Science Academy de Microsoft Power BI Para Business Intelligence e Data Science, utilizando dados fictícios para a criação de um Dashboard Analítico de Vendas Globais.
+            </p>
+            <a href="https://jeferson-paz.github.io/Dashboard/" target="_blank">
+                <img src="img/Dashboard_Analitico_de_Vendas_Globais.png" alt="Análise de Dados de Vendas Globais" class="project-image">
+            </a>
         </div>
-        
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="project">
+            <div class="project-header">
+                <img src="img/MicrosoftPowerBI.png" alt="Porwer BI" class="project-icon">
+                <h3 class="project-title">Dashboard Análise de Dados de Vendas, Custo, Margem de Lucro e KPI</h3>
+            </div>
+            <p class="project-description">
+                Este Dashboard foi criado através do curso gratuito da Data Science Academy de Microsoft Power BI Para Business Intelligence e Data Science, utilizando dados fictícios para a criação de um Dashboard Analítico de Vendas, Custo, Margem de Lucro e KPI.
+            </p>
+            <a href="https://jeferson-paz.github.io/Dashboard-2/" target="_blank">
+                <img src="img/Dashboard_de_Vendas_Custo_Custo_Margem_de_Lucro_e_KPI.png" alt="Análise de Dados de Vendas, Custo, Margem de Lucro e KPI" class="project-image">
+            </a>
+        </div>
+        <div class="project">
+            <div class="project-header">
+                <img src="img/Python.png" alt="Python" class="project-icon">
+                <h3 class="project-title">Análise Exploratória de Dados em Linguagem Python Para a Área de Varejo</h3>
+            </div>
+            <p class="project-description">
+                Nesta análise exploratória de dados, focamos em diversas perguntas de negócio cruciais para a área de varejo, utilizando ferramentas avançadas de visualização em Python.
+            </p>
+            <a href="link-para-o-projeto-3" target="_blank">
+                <img src="img/Análise Exploratória de Dados em Linguagem Python Para a Área de Varejo.jpeg" alt="Imagem do projeto" class="project-image">
+            </a>
+        </div>
+        <div class="project">
+            <div class="project-header">
+                <img src="img/Python" alt="Python" class="project-icon">
+                <h3 class="project-title">Análise Estatística com Statsmodels</h3>
+            </div>
+            <p class="project-description">
+                Neste projeto, analisamos se existe uma relação entre a área dos imóveis (em metros quadrados) e o valor do aluguel em uma cidade específica. Utilizando métodos estatísticos, como a regressão linear, investigamos se imóveis maiores tendem a ter aluguéis mais altos e quantificamos essa relação. O objetivo é entender como o tamanho do imóvel influencia o preço do aluguel, proporcionando insights valiosos para locatários e investidores imobiliários.
+            </p>
+            <a href="link-para-o-projeto-4" target="_blank">
+                <img src="img/Análise Estatística com Statsmodels.png Estatística com Statsmodels.jpeg" alt="Imagem do projeto" class="project-image">
+            </a>
+        </div>
     </div>
 </section>
 
         <!-- Formação Section -->
-        <section id="formacao">
-            <h2>Formação</h2>
-            <ul>
-                <li>MBA em Big Data e Inteligência Competitiva - Descomplica Faculdade Digital</li>
-                <li>Pós-graduação Lato Sensu - Especialização Privacidade e Proteção de Dados Pessoais - Descomplica Faculdade Digital</li>
-                <li>Pós-Graduação – Especialização Business Intelligence, Big Data e Analytics - Ciência de Dados - UNOPAR - Universidade Norte do Paraná</li>
-                <li>Tecnólogo Analise e Desenvolvimento de Sistemas - UNOPAR - Universidade Norte do Paraná</li>
-                <li>Técnico Montagem manutenções e rede de computadores - SOS computadores</li>
-            </ul>
-        </section>
+<section id="formacao">
+    <h2>Formação</h2>
+    <ul>
+        <li>
+            <img src="img/faculdade_descomplica_logo.jpeg" alt="Logo Descomplica" class="institution-logo">
+            MBA em Big Data e Inteligência Competitiva - Descomplica Faculdade Digital
+            <span class="year">Início: dez de 2022 | Término: ago de 2023</span>
+        </li>
+        <li>
+            <img src="img/faculdade_descomplica_logo.jpeg" alt="Logo Descomplica" class="institution-logo">
+            Pós-graduação Lato Sensu - Especialização Privacidade e Proteção de Dados Pessoais - Descomplica Faculdade Digital
+            <span class="year">Início: jan de 2023 | Término: ago de 2023</span>
+        </li>
+        <li>
+            <img src="img/unopar___universidade_norte_do_paran__logo.jpeg" alt="Logo UNOPAR" class="institution-logo">
+            Pós-Graduação – Especialização Business Intelligence, Big Data e Analytics - Ciência de Dados - UNOPAR - Universidade Norte do Paraná
+            <span class="year">Início: jul de 2022 | Término: abr de 2023</span>
+        </li>
+        <li>
+            <img src="img/unopar___universidade_norte_do_paran__logo.jpeg" alt="Logo UNOPAR" class="institution-logo">
+            Tecnólogo Análise e Desenvolvimento de Sistemas - UNOPAR - Universidade Norte do Paraná
+            <span class="year">Início: jun de 2019 | Término: jun de 2022</span>
+        </li>
+        <li>
+            <img src="img/soscomputadores.png" alt="Logo SOS Computadores" class="institution-logo">
+            Técnico Montagem, Manutenção e Rede de Computadores - SOS Computadores
+            <span class="year">Início: jan de 2006 | Término: fev de 2007</span>
+        </li>
+    </ul>
+</section>
 
         <!-- Carrossel de Tecnologias -->
         <section id="tecnologias">
@@ -142,7 +168,7 @@
                             <div class="d-flex justify-content-around">
                                 <img src="https://img.icons8.com/ios/50/ffffff/python.png" alt="Python" class="icon-white">
                                 <img src="https://img.icons8.com/ios/50/ffffff/sql.png" alt="SQL" class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/microsoft-excel-2019.png" alt="Excel" class="icon-white"> <!-- Atualizado -->
+                                <img src="https://img.icons8.com/ios/50/ffffff/microsoft-excel-2019.png" alt="Excel" class="icon-white">
                                 <img src="https://img.icons8.com/ios/50/ffffff/power-bi.png" alt="Power BI" class="icon-white">
                                 <img src="https://img.icons8.com/ios/50/ffffff/r.png" alt="R" class="icon-white">
                             </div>
@@ -169,8 +195,38 @@
             </div>
         </section>
     </div>
-    
+
+<!-- Experiência Profissional Section -->
+<section id="experiencia">
+    <div class="container">
+    <h2>Experiência</h2>
+    <ul>
+        <li>
+            <img src="img/sonda.png" alt="SONDA" class="company-logo">
+            <h3>Analista de Suporte I TI | N3 | Sênior - SONDA</h3>
+            <p><strong>Período:</strong> Junho de 2022 - Presente</p>
+            <p>Como Analista de Suporte de TI na SONDA, uma empresa líder em tecnologia e serviços, desempenho um papel crucial ao fornecer suporte técnico para a Roche, uma renomada empresa farmacêutica global. Gerencio tickets usando a plataforma ServiceNow, oferecendo suporte técnico essencial aos usuários das soluções tecnológicas da organização. Minhas responsabilidades incluem orientar os clientes no uso adequado das ferramentas, gerenciar acessos e configurações, realizar manutenção preventiva e corretiva em dispositivos como estações de trabalho e periféricos. Além disso, forneço assistência técnica durante eventos internos e externos, e conduzo treinamentos de TI para novos membros da equipe que se juntam à Roche.</p>
+        </li>
+        <li>
+            <img src="img/Randstad Brasil.jpeg" alt="Randstad Brasil" class="company-logo">
+            <h3>Operador de Produção de Documentos I | TI - Temporário - Randstad Brasil</h3>
+            <p><strong>Período:</strong> Junho de 2022 - Julho de 2022</p>
+            <p>Trabalhei na Xerox, onde forneci suporte para a Roche, uma empresa farmacêutica, cuidando das impressoras. Utilizei a plataforma Service Now para gerenciar os pedidos de manutenção das impressoras. Além disso, ajudei com tarefas como cópias e impressões de documentos, monitorando e reabastecendo os suprimentos das impressoras para que elas sempre funcionassem bem. Também estive à disposição para resolver problemas quando as impressoras apresentavam dificuldades, sendo a primeira pessoa a responder nesses casos. Meu objetivo era garantir que as coisas corressem bem e que as impressoras estivessem sempre prontas para uso.</p>
+        </li>
+        <li>
+            <img src="img/EY.jpeg" alt="EY" class="company-logo">
+            <h3>Auxiliar de Projetos TI - Temporário - EY</h3>
+            <p><strong>Período:</strong> Dezembro de 2021 - Março de 2022</p>
+            <p>Trabalhei como Auxiliar de Projetos de TI, onde usei várias ferramentas para melhorar nossos processos. Utilizei ferramentas como Alteryx, Excel, Power BI, AWS e SQL para organizar e extrair informações importantes. No meu dia a dia, administrei nossos projetos usando o Jira Service Desk, mantendo tudo organizado e atualizado. Também ajudei a equipe de auditoria, verificando documentos importantes para garantir que estivessem corretos.</p>
+        </li>
+    </ul>
+</div>
+</section>
+
     <!-- Recomendações -->
+    <section id="recomendacoes">
+        <!-- Conteúdo da seção Recomendações -->
+    </section>
     <section class="recommendations-section">
         <h2>Recomendações</h2>
         <div class="recommendation-container">
@@ -181,7 +237,7 @@
                         <h3>Rafael Gonçalves</h3>
                         <p>Especialista em vendas</p>
                         <a href="https://www.linkedin.com/company/atento/" target="_blank" class="company-link">
-                            <img src="img/atentoat.png" alt="Atento Brasil" class="company-logo">
+                            <img src="img/Atento.jpeg" alt="Atento Brasil" class="company-logo">
                         </a>
                         <a href="https://www.linkedin.com/in/rafael-gon%C3%A7alves-paz-5a732623a/" target="_blank" class="linkedin-link">
                             <img src="img/in.png" alt="LinkedIn">
@@ -253,28 +309,45 @@
                     </div>
                 </div>
                 <p class="recommendation-text">"Recebeu reconhecimento do cliente Roche pelo excelente trabalho e dedicação ao evento híbrido de Diversidade, Equidade e Inclusão, que foi fundamental para o sucesso dessa entrega. Muito obrigada pelo seu compromisso e dedicação em sempre apoiar e contribuir para o benefício do nosso cliente."</p>
-            </div>   
+            </div>
+            <div class="recommendation-card">
+                <div class="profile">
+                    <img src="img/Sabrina De Moura Speziali.jpeg" alt="Sabrina De Moura Speziali" class="profile-pic">
+                    <div class="profile-info">
+                        <h3>Sabrina Speziali</h3>
+                        <p>Manager de Serviços</p>
+                        <a href="https://www.linkedin.com/company/sonda/" target="_blank" class="company-link">
+                            <img src="img/sonda.png" alt="Sonda" class="company-logo">
+                        </a>
+                        <a href="https://www.linkedin.com/in/sabrina-speziali-bb592113/" target="_blank" class="linkedin-link">
+                            <img src="img/in.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+                <p class="recommendation-text">"Recebeu reconhecimento do cliente Roche pelo excelente trabalho e dedicação ao evento híbrido de Diversidade, Equidade e Inclusão, que foi fundamental para o sucesso dessa entrega. Muito obrigada pelo seu compromisso e dedicação em sempre apoiar e contribuir para o benefício do nosso cliente."</p>
+            </div>
         </div>
-    </section>    
+        </div>
+    </section>
 
     <!-- Rodapé -->
     <footer class="text-center">
         <div class="container">
-            <p>&copy; 2023 - 2024 Jeferson Paz. Todos os direitos reservados.</p>
+            <p>&copy; 2023 | 2024 - Jeferson Paz</p>
             <div class="d-flex justify-content-center">
                 <a href="https://github.com/jeferson-paz" target="_blank" aria-label="GitHub"><img src="https://img.icons8.com/ios/50/ffffff/github.png" class="footer-icon" alt="GitHub"></a>
                 <a href="https://www.linkedin.com/in/jeferson-paz/" target="_blank" aria-label="LinkedIn"><img src="https://img.icons8.com/ios/50/ffffff/linkedin.png" class="footer-icon" alt="LinkedIn"></a>
                 <a href="https://www.instagram.com/jeferson.paz_/" target="_blank" aria-label="Instagram"><img src="https://img.icons8.com/ios/50/ffffff/instagram-new.png" class="footer-icon" alt="Instagram"></a>
                 <a href="https://api.whatsapp.com/send?phone=21969024717&text=Olá,%20gostaria%20de%20conversar%20sobre%20o%20seu%20portfólio!" target="_blank" aria-label="WhatsApp"><img src="https://img.icons8.com/ios/50/ffffff/whatsapp.png" class="footer-icon" alt="WhatsApp"></a>
-                <a href="mailto:paz.jefferson@outlook.com" aria-label="E-mail"><img src="https://img.icons8.com/ios/50/ffffff/mail.png" class="footer-icon" alt="E-mail"></a>
+                <a href="mailto:goncalvespaz@outlook.com" aria-label="E-mail"><img src="https://img.icons8.com/ios/50/ffffff/mail.png" class="footer-icon" alt="E-mail"></a>
             </div>
         </div>
     </footer>
 
     <!-- Botão de Voltar ao Topo -->
-<a href="#" class="btn btn-primary btn-back-to-top" aria-label="Voltar ao Topo">
-    <i class="fa-solid fa-arrow-up"></i>
-</a>
+    <a href="#" class="btn btn-primary btn-back-to-top" aria-label="Voltar ao Topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

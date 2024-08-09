@@ -1,259 +1,373 @@
+/* Configurações Globais para o corpo da página */
 body {
-    font-family: 'Muli', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    margin-top: 56px;
+    font-family: 'Muli', sans-serif; /* Fonte padrão */
+    background-color: #1e1e1e; /* Cor de fundo do site */
+    color: #e0e0e0; /* Cor padrão do texto */
+    margin-top: 56px; /* Margem superior */
 }
 
-/* Navbar */
+/* Estilo para a barra de navegação (Navbar) */
 .navbar {
-    background-color: #333;
+    background-color: #333; /* Cor de fundo da navbar */
 }
 
+/* Remove a margem automática que centraliza o menu */
+.navbar-nav {
+    margin-left: 0; /* Alinha o menu à esquerda */
+}
+
+/* Esconde o menu por padrão e mostra somente quando clicado */
+.navbar-collapse {
+    display: none; /* Esconde o menu por padrão */
+}
+
+.navbar-toggler.collapsed + .navbar-collapse {
+    display: block; /* Mostra o menu quando o botão é clicado */
+}
+
+/* Estilo dos links */
 .navbar-brand, .nav-link {
-    color: #e0e0e0 !important;
+    color: #e0e0e0 !important; /* Cor dos links na navbar */
 }
 
 .nav-link:hover {
-    color: #c0c0c0 !important;
+    color: #c0c0c0 !important; /* Cor dos links na navbar quando o mouse está sobre eles */
 }
 
-/* Hero Section */
+/* Seção de Hero (Principal) */
 .hero-section {
-    background-color: #1e1e1e;
-    padding: 80px 0;
-    text-align: center;
+    padding: 20px; /* Espaçamento interno da seção hero */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilo da caixa na seção Hero */
+.hero-box {
+    background-color: #1c1c1c; /* Cor de fundo da caixa */
+    border: 2px solid #333; /* Borda da caixa */
+    padding: 20px; /* Espaçamento interno da caixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: inline-block; /* Para centralizar a caixa */
+    max-width: 400px; /* Largura máxima da caixa */
+    width: 100%; /* Largura ajustável da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Conteúdo da seção Hero */
 .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Alinha itens no centro */
 }
 
+/* Estilo para a imagem do perfil na seção Hero */
 .profile-circle {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50%; /* Transforma a imagem em um círculo */
     overflow: hidden;
-    border: 4px solid #555;
-    margin-bottom: 20px;
+    border: 4px solid #555; /* Borda ao redor da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
 
 .profile-circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço do círculo */
+}
+
+/* Texto dentro da seção Hero */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Tamanho do texto do título */
     margin-bottom: 10px;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
-    color: #a0a0a0;
+    font-size: 1.2rem; /* Tamanho do texto do parágrafo */
+    color: #a0a0a0; /* Cor do texto do parágrafo */
 }
 
-/* Social Icons */
+/* Caixa de título "Analista de Dados" na seção Hero */
+.title-box {
+    background-color: #2e2e2e; /* Cor de fundo da caixa de título */
+    padding: 10px 20px; /* Espaçamento interno da caixa */
+    border-radius: 20px; /* Bordas arredondadas */
+    display: inline-block;
+    margin-top: 10px;
+    color: #e0e0e0; /* Cor do texto dentro da caixa */
+    text-align: center;
+}
+
+/* Ícones de redes sociais */
 .social-icons {
-    margin-top: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
 }
 
 .social-icons a {
-    color: #e0e0e0;
-    margin: 0 10px;
-    font-size: 1.5rem;
-    transition: color 0.3s;
+    color: #e0e0e0; /* Cor dos ícones */
+    font-size: 3.5rem; /* Tamanho dos ícones */
+    transition: color 0.7s; /* Transição suave da cor */
 }
 
 .social-icons a:hover {
-    color: #c0c0c0;
+    color: #c0c0c0; /* Cor dos ícones ao passar o mouse */
 }
 
-/* Sections */
+/* Estilo padrão para seções */
 section {
-    margin-bottom: 60px;
+    margin-bottom: 60px; /* Espaçamento inferior das seções */
 }
 
 h2 {
-    color: #c0c0c0;
+    color: #c0c0c0; /* Cor do texto do título das seções */
+    margin-bottom: 20px; /* Espaçamento inferior dos títulos */
+}
+
+/* Estilo para a seção de Projetos */
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os projetos se reorganizem em várias linhas */
+    gap: 20px; /* Espaçamento entre os projetos */
+    justify-content: center; /* Centraliza os projetos */
+    padding: 20px; /* Espaçamento interno da seção */
+}
+
+.project {
+    background-color: #2a2a2a; /* Cor de fundo do projeto */
+    padding: 20px; /* Espaçamento interno dos projetos */
+    border-radius: 10px; /* Bordas arredondadas dos projetos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra dos projetos */
+    flex: 1 1 calc(50% - 40px); /* Define o tamanho e espaçamento dos projetos */
+    max-width: calc(50% - 40px); /* Largura máxima dos projetos */
+    box-sizing: border-box;
     margin-bottom: 20px;
+    background-color: #1c1c1c; /* Cor de fundo mais escura */
 }
 
-/* Projetos Section */
-.card {
-    background-color: #2a2a2a;
-    color: #e0e0e0;
+.project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Espaçamento inferior do cabeçalho */
 }
 
-.card-title, .card-text {
-    color: #e0e0e0;
+.project-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Espaçamento à direita do ícone */
 }
 
-.btn-interactive {
-    background-color: #333;
-    color: #e0e0e0;
-    border: none;
-    transition: background-color 0.3s;
+.project-title {
+    font-size: 20px; /* Tamanho do título do projeto */
+    margin: 0;
+    color: #ffc107; /* Cor do título do projeto */
 }
 
-.btn-interactive:hover {
-    background-color: #555;
+.project-description {
+    margin: 15px 0;
+    font-size: 16px; /* Tamanho da descrição do projeto */
+    color: #e0e0e0; /* Cor da descrição do projeto */
 }
 
-/* Footer */
+/* Imagem dentro dos projetos */
+.project-image {
+    width: 100%; /* Largura total da imagem */
+    border-radius: 10px; /* Bordas arredondadas da imagem */
+    margin-top: 15px; /* Espaçamento superior da imagem */
+}
+
+/* Estilo para telas menores (responsividade) */
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 100%; /* Projetos ocupam toda a largura da tela */
+        max-width: 100%;
+    }
+
+    .project-title {
+        font-size: 18px; /* Tamanho reduzido do título */
+    }
+
+    .project-description {
+        font-size: 14px; /* Tamanho reduzido da descrição */
+    }
+}
+
+/* CSS para Formação Section */
+.institution-logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.year {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Estilo para o rodapé */
 footer {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* Cor de fundo do rodapé */
     padding: 20px 0;
+    text-align: center; /* Centraliza o texto */
 }
 
 footer p {
     margin: 0;
-    color: #a0a0a0;
+    color: #a0a0a0; /* Cor do texto do rodapé */
 }
 
-/* Carousel Icons */
+/* Estilo para ícones brancos */
 .icon-white {
     color: #ffffff;
 }
 
-/* Footer Icons */
+/* Estilo para ícones no rodapé */
 .footer-icon {
-    width: 30px;
-    height: 30px;
+    width: 30px; /* Largura dos ícones do rodapé */
+    height: 30px; /* Altura dos ícones do rodapé */
     margin: 0 10px;
-    vertical-align: middle;
+    vertical-align: middle; /* Alinha verticalmente */
 }
 
 /* Botão de Voltar ao Topo */
 .btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #333;
-    color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-    display: none;
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da lateral direita da tela */
+    background-color: #333; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do ícone */
+    border: none; /* Remove bordas padrão */
+    border-radius: 50%; /* Faz o botão redondo */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente o ícone */
+    justify-content: center; /* Alinha horizontalmente o ícone */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    display: none; /* Inicialmente o botão está oculto */
 }
 
 .btn-back-to-top:hover {
-    background-color: #555;
+    background-color: #555; /* Cor do botão ao passar o mouse */
 }
 
 .btn-back-to-top i {
-    font-size: 1.2rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
-
-    .social-icons a {
-        font-size: 1.2rem;
-    }
-}
-
-.img-small {
-    width: 80%; /* Ajuste o valor conforme necessário */
-    max-width: 600px; /* Ajuste o valor conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    font-size: 2.2rem; /* Tamanho do ícone */
 }
 
 /* Estilos para a seção de recomendações */
 .recommendations-section {
-    padding: 40px 20px;
-    background-color: 0 4px 8px rgba(0, 0, 0, 0.2); ;
-    text-align: center;
+    padding: 40px 20px; /* Espaçamento interno da seção */
+    background-color: #1e1e1e; /* Cor de fundo da seção */
+    text-align: center; /* Centraliza o texto */
 }
 
 .recommendations-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #c0c0c0;
+    font-size: 2em; /* Tamanho do título da seção */
+    margin-bottom: 20px; /* Espaçamento inferior do título */
+    color: #c0c0c0; /* Cor do título */
 }
 
 .recommendation-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: flex; /* Usa flexbox para alinhar os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para uma nova linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os cartões */
 }
 
+/* Estilo para cada cartão de recomendação */
 .recommendation-card {
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    padding: 20px;
-    text-align: left;
-    margin: 10px;
-    position: relative;
+    background-color: #2a2a2a; /* Cor de fundo do cartão */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra ao redor do cartão */
+    max-width: 300px; /* Largura máxima do cartão */
+    padding: 20px; /* Espaçamento interno do cartão */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 10px; /* Espaçamento externo do cartão */
+    position: relative; /* Permite posicionamento relativo dos elementos internos */
 }
 
+/* Estilo para a seção de perfil dentro do cartão */
 .profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-bottom: 15px; /* Espaçamento inferior do perfil */
 }
 
 .profile-pic {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    margin-right: 15px;
+    border-radius: 50%; /* Faz a imagem do perfil redonda */
+    width: 60px; /* Largura da imagem do perfil */
+    height: 60px; /* Altura da imagem do perfil */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço */
+    margin-right: 15px; /* Espaçamento à direita da imagem do perfil */
 }
 
 .profile-info {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Usa flexbox para alinhar os itens */
+    flex-direction: column; /* Alinha os itens verticalmente */
 }
 
 .profile-info h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #fff;
+    margin: 0; /* Remove margem padrão */
+    font-size: 1.2em; /* Tamanho do texto do nome */
+    color: #fff; /* Cor do texto do nome */
 }
 
 .profile-info p {
-    margin: 0;
-    color: #777;
+    margin: 0; /* Remove margem padrão */
+    color: #fff; /* Cor do texto da descrição */
 }
 
 .company-link, .linkedin-link {
-    margin-top: 10px;
+    margin-top: 10px; /* Espaçamento superior dos links */
 }
 
 .company-logo {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    margin-right: 10px;
+    width: 30px; /* Largura do logotipo da empresa */
+    height: 30px; /* Altura do logotipo da empresa */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço */
+    margin-right: 10px; /* Espaçamento à direita do logotipo */
 }
 
 .linkedin-link img {
-    width: 20px;
-    height: 20px;
+    width: 20px; /* Largura do ícone do LinkedIn */
+    height: 20px; /* Altura do ícone do LinkedIn */
 }
 
 .recommendation-text {
-    font-size: 1em;
-    color: #fff;
-    line-height: 1.5;
+    font-size: 1em; /* Tamanho do texto da recomendação */
+    color: #e0e0e0; /* Cor do texto da recomendação */
+    line-height: 1.5; /* Altura da linha do texto */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .recommendation-card {
+        flex: 1 1 calc(50% - 20px); /* Largura ajustada para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .recommendation-card {
+        flex: 1 1 100%; /* Largura ajustada para telas ainda menores */
+    }
+}
+
+/* Estilo para imagens pequenas */
+.img-small {
+    width: 80%; /* Largura das imagens pequenas */
+    max-width: 600px; /* Largura máxima das imagens pequenas */
+    height: auto; /* Altura automática para manter a proporção */
 }
