@@ -327,7 +327,7 @@ footer p {
 
 .profile-info p {
     margin: 0; /* Remove margem padrão */
-    color: #fff; /* Cor do texto da descrição */
+    color: #555; /* Cor do texto da descrição */
 }
 
 .company-link, .linkedin-link {
@@ -348,7 +348,7 @@ footer p {
 
 .recommendation-text {
     font-size: 1em; /* Tamanho do texto da recomendação */
-    color: #555; /* Cor do texto da recomendação */
+    color: #e0e0e0; /* Cor do texto da recomendação */
     line-height: 1.5; /* Altura da linha do texto */
 }
 
