@@ -438,3 +438,50 @@ footer p {
     font-size: 16px;
     color: #b0b0b0;
 }
+
+/* Estilo básico para a seção de cursos e certificados */
+.courses-section {
+    background-color: #1c1c1c;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+}
+
+.courses-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    background-color: #2a2a2a;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    color: #d0d0d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificate-link {
+    text-decoration: none;
+    color: #00bfff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.certificate-link:hover {
+    color: #007acc;
+}
