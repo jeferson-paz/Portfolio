@@ -1,14 +1,35 @@
+/* Nova paleta de cores */
+:root {
+    --black: #000000;
+    --dark-green: #285430;
+    --medium-green: #4CAF50;
+    --light-green: #9CCC65;
+    --light-gray: #F2F2F2;
+
+    /* Novas cores */
+    --dark-blue: #003366;
+    --medium-blue: #006699;
+    --light-blue: #66CCFF;
+    --dark-gray: #4D4D4D;
+    --gold: #FFD700;
+
+    /* Cores roxas */
+    --dark-purple: #4B0082;
+    --medium-purple: #800080;
+    --lavender: #E6E6FA;
+}
+
 /* Configurações Globais para o corpo da página */
 body {
     font-family: 'Muli', sans-serif; /* Fonte padrão */
-    background-color: #1e1e1e; /* Cor de fundo do site */
-    color: #e0e0e0; /* Cor padrão do texto */
+    background-color: var(--black); /* Cor de fundo do site */
+    color: var(--light-gray); /* Cor padrão do texto */
     margin-top: 56px; /* Margem superior */
 }
 
 /* Estilo para a barra de navegação (Navbar) */
 .navbar {
-    background-color: #333; /* Cor de fundo da navbar */
+    background-color: var(--dark-purple); /* Cor de fundo da navbar */
 }
 
 /* Remove a margem automática que centraliza o menu */
@@ -27,11 +48,11 @@ body {
 
 /* Estilo dos links */
 .navbar-brand, .nav-link {
-    color: #e0e0e0 !important; /* Cor dos links na navbar */
+    color: var(--light-gray) !important; /* Cor dos links na navbar */
 }
 
 .nav-link:hover {
-    color: #c0c0c0 !important; /* Cor dos links na navbar quando o mouse está sobre eles */
+    color: var(--medium-purple) !important; /* Cor dos links na navbar quando o mouse está sobre eles */
 }
 
 /* Seção de Hero (Principal) */
@@ -42,8 +63,8 @@ body {
 
 /* Estilo da caixa na seção Hero */
 .hero-box {
-    background-color: #1c1c1c; /* Cor de fundo da caixa */
-    border: 2px solid #333; /* Borda da caixa */
+    background-color: var(--black); /* Cor de fundo da caixa */
+    border: 2px solid var(--dark-purple); /* Borda da caixa */
     padding: 20px; /* Espaçamento interno da caixa */
     border-radius: 10px; /* Bordas arredondadas */
     display: inline-block; /* Para centralizar a caixa */
@@ -66,7 +87,7 @@ body {
     height: 150px;
     border-radius: 50%; /* Transforma a imagem em um círculo */
     overflow: hidden;
-    border: 4px solid #555; /* Borda ao redor da imagem */
+    border: 4px solid var(--dark-purple); /* Borda ao redor da imagem */
     margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
 
@@ -90,17 +111,17 @@ body {
 
 .hero-text p {
     font-size: 1.2rem; /* Tamanho do texto do parágrafo */
-    color: #a0a0a0; /* Cor do texto do parágrafo */
+    color: var(--light-gray); /* Cor do texto do parágrafo */
 }
 
 /* Caixa de título "Analista de Dados" na seção Hero */
 .title-box {
-    background-color: #2e2e2e; /* Cor de fundo da caixa de título */
+    background-color: var(--dark-purple); /* Cor de fundo da caixa de título */
     padding: 10px 20px; /* Espaçamento interno da caixa */
     border-radius: 20px; /* Bordas arredondadas */
     display: inline-block;
     margin-top: 10px;
-    color: #e0e0e0; /* Cor do texto dentro da caixa */
+    color: var(--black); /* Cor do texto dentro da caixa */
     text-align: center;
 }
 
@@ -113,13 +134,13 @@ body {
 }
 
 .social-icons a {
-    color: #e0e0e0; /* Cor dos ícones */
+    color: var(--light-gray); /* Cor dos ícones */
     font-size: 3.5rem; /* Tamanho dos ícones */
     transition: color 0.7s; /* Transição suave da cor */
 }
 
 .social-icons a:hover {
-    color: #c0c0c0; /* Cor dos ícones ao passar o mouse */
+    color: var(--medium-purple); /* Cor dos ícones ao passar o mouse (ajustada para destaque) */
 }
 
 /* Estilo padrão para seções */
@@ -128,7 +149,7 @@ section {
 }
 
 h2 {
-    color: #c0c0c0; /* Cor do texto do título das seções */
+    color: var(--dark-purple); /* Cor do texto do título das seções */
     margin-bottom: 20px; /* Espaçamento inferior dos títulos */
 }
 
@@ -142,15 +163,14 @@ h2 {
 }
 
 .project {
-    background-color: #2a2a2a; /* Cor de fundo do projeto */
+    background-color: var(--black); /* Cor de fundo do projeto */
     padding: 20px; /* Espaçamento interno dos projetos */
     border-radius: 10px; /* Bordas arredondadas dos projetos */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra dos projetos */
+    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5); /* Sombra dos projetos */
     flex: 1 1 calc(50% - 40px); /* Define o tamanho e espaçamento dos projetos */
     max-width: calc(50% - 40px); /* Largura máxima dos projetos */
     box-sizing: border-box;
     margin-bottom: 20px;
-    background-color: #1c1c1c; /* Cor de fundo mais escura */
 }
 
 .project-header {
@@ -168,13 +188,13 @@ h2 {
 .project-title {
     font-size: 20px; /* Tamanho do título do projeto */
     margin: 0;
-    color: #ffc107; /* Cor do título do projeto */
+    color: var(--medium-purple); /* Cor do título do projeto */
 }
 
 .project-description {
     margin: 15px 0;
     font-size: 16px; /* Tamanho da descrição do projeto */
-    color: #e0e0e0; /* Cor da descrição do projeto */
+    color: var(--light-gray); /* Cor da descrição do projeto */
 }
 
 /* Imagem dentro dos projetos */
@@ -211,25 +231,25 @@ h2 {
 .year {
     display: block;
     font-size: 0.9em;
-    color: #666;
+    color: var(--dark-purple);
     margin-top: 5px;
 }
 
 /* Estilo para o rodapé */
 footer {
-    background-color: #1e1e1e; /* Cor de fundo do rodapé */
+    background-color: var(--dark-purple); /* Cor de fundo do rodapé */
     padding: 20px 0;
     text-align: center; /* Centraliza o texto */
 }
 
 footer p {
     margin: 0;
-    color: #a0a0a0; /* Cor do texto do rodapé */
+    color: var(--light-gray); /* Cor do texto do rodapé */
 }
 
 /* Estilo para ícones brancos */
 .icon-white {
-    color: #ffffff;
+    color: var(--light-gray);
 }
 
 /* Estilo para ícones no rodapé */
@@ -245,8 +265,8 @@ footer p {
     position: fixed; /* Fixa o botão na tela */
     bottom: 20px; /* Distância do fundo da tela */
     right: 20px; /* Distância da lateral direita da tela */
-    background-color: #333; /* Cor de fundo do botão */
-    color: #ffffff; /* Cor do texto do ícone */
+    background-color: var(--dark-purple); /* Cor de fundo do botão */
+    color: var(--light-gray); /* Cor do texto do ícone */
     border: none; /* Remove bordas padrão */
     border-radius: 50%; /* Faz o botão redondo */
     width: 50px; /* Largura do botão */
@@ -254,13 +274,13 @@ footer p {
     display: flex; /* Usa flexbox para centralizar o conteúdo */
     align-items: center; /* Alinha verticalmente o ícone */
     justify-content: center; /* Alinha horizontalmente o ícone */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao botão */
     transition: background-color 0.3s; /* Transição suave para a cor de fundo */
     display: none; /* Inicialmente o botão está oculto */
 }
 
 .btn-back-to-top:hover {
-    background-color: #555; /* Cor do botão ao passar o mouse */
+    background-color: var(--medium-purple); /* Cor do botão ao passar o mouse */
 }
 
 .btn-back-to-top i {
@@ -270,14 +290,14 @@ footer p {
 /* Estilos para a seção de recomendações */
 .recommendations-section {
     padding: 40px 20px; /* Espaçamento interno da seção */
-    background-color: #1e1e1e; /* Cor de fundo da seção */
+    background-color: var(--black); /* Cor de fundo da seção */
     text-align: center; /* Centraliza o texto */
 }
 
 .recommendations-section h2 {
     font-size: 2em; /* Tamanho do título da seção */
     margin-bottom: 20px; /* Espaçamento inferior do título */
-    color: #c0c0c0; /* Cor do título */
+    color: var(--dark-purple); /* Cor do título */
 }
 
 .recommendation-container {
@@ -289,9 +309,9 @@ footer p {
 
 /* Estilo para cada cartão de recomendação */
 .recommendation-card {
-    background-color: #2a2a2a; /* Cor de fundo do cartão */
+    background-color: var(--black); /* Cor de fundo do cartão */
     border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra ao redor do cartão */
+    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5); /* Sombra ao redor do cartão */
     max-width: 300px; /* Largura máxima do cartão */
     padding: 20px; /* Espaçamento interno do cartão */
     text-align: left; /* Alinha o texto à esquerda */
@@ -322,12 +342,12 @@ footer p {
 .profile-info h3 {
     margin: 0; /* Remove margem padrão */
     font-size: 1.2em; /* Tamanho do texto do nome */
-    color: #fff; /* Cor do texto do nome */
+    color: var(--light-gray); /* Cor do texto do nome */
 }
 
 .profile-info p {
     margin: 0; /* Remove margem padrão */
-    color: #fff; /* Cor do texto da descrição */
+    color: var(--light-gray); /* Cor do texto da descrição */
 }
 
 .company-link, .linkedin-link {
@@ -348,7 +368,7 @@ footer p {
 
 .recommendation-text {
     font-size: 1em; /* Tamanho do texto da recomendação */
-    color: #e0e0e0; /* Cor do texto da recomendação */
+    color: var(--light-gray); /* Cor do texto da recomendação */
     line-height: 1.5; /* Altura da linha do texto */
 }
 
@@ -377,19 +397,24 @@ footer p {
     display: inline-block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #2a2a2a; /* Cor de fundo verde */
-    color: white;
+    background-color: var(--dark-purple); /* Cor de fundo */
+    color: var(--light-gray); /* Cor do texto */
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.email-button:hover {
+    background-color: var(--medium-purple); /* Cor do botão ao passar o mouse */
 }
 
 /* Estilo para o botão quando o mouse passa por cima */
 .email-button:hover {
-    background-color: #666; /* Cor de fundo quando o mouse passa por cima */
+    background-color: var(--medium-purple); /* Cor de fundo quando o mouse passa por cima */
 }
 
 /* Centralizando o botão na página */
@@ -398,21 +423,21 @@ footer p {
     margin-top: 50px;
 }
 
- /* Estilo básico para a seção de estudo */
+/* Estilo básico para a seção de estudo */
 .studying-section {
-    background-color: #2c2c2c;
+    background-color: var(--black);
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
     max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #f0f0f0;
+    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5);
+    color: var(--light-gray);
 }
 
 .studying-section h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #e0e0e0;
+    color: var(--light-gray);
     text-align: center;
 }
 
@@ -422,13 +447,13 @@ footer p {
 }
 
 .studying-list li {
-    background-color: #3a3a3a;
+    background-color: var(--dark-purple);
     margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 18px;
-    color: #d0d0d0;
+    color: var(--light-gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -436,52 +461,108 @@ footer p {
 
 .study-time {
     font-size: 16px;
-    color: #b0b0b0;
+    color: var(--light-gray);
 }
 
-/* Estilo básico para a seção de cursos e certificados */
-.courses-section {
-    background-color: #1c1c1c;
-    padding: 30px;
-    margin: 20px auto;
-    border-radius: 8px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #e0e0e0;
-}
-
-.courses-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #f0f0f0;
-}
-
-.course-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.course-list li {
-    background-color: #2a2a2a;
-    margin: 15px 0;
+/* Guia de Resenhas */
+.review-guide {
     padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    font-size: 18px;
-    color: #d0d0d0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: var(--black);
+    border-radius: 8px;
+    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5);
+    margin: 20px auto;
+    max-width: 800px;
 }
 
-.certificate-link {
+.review-guide h1 {
+    text-align: center;
+    color: var(--light-gray);
+    margin-bottom: 20px;
+}
+
+.review-guide nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.review-guide nav ul li {
+    margin: 10px 0;
+}
+
+.review-guide nav ul li a {
+    color: var(--light-gray);
     text-decoration: none;
-    color: #00bfff;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    font-size: 18px;
 }
 
-.certificate-link:hover {
-    color: #007acc;
+.review-guide nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.review-section {
+    padding: 20px;
+    background: var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.review-section h2, .review-section h3, .review-section h4 {
+    color: var(--black);
+}
+
+.review-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.review-section p, .review-section ul {
+    color: var(--black);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.review-section ul {
+    padding-left: 20px;
+}
+
+.review-section ul li {
+    margin-bottom: 10px;
+}
+
+/** Informações Adicionais **/
+.rating-info {
+    background-color: var(--light-gray);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.rating-info p {
+    margin: 5px 0;
+}
+
+.rating-info a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.rating-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* Container para centralizar o botão */
+.button-container {
+flex: 1; /* Faz o container ocupar o espaço disponível */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--black); /* Cor de fundo preta */
+padding: 20px; /* Espaçamento em torno do botão */
 }
