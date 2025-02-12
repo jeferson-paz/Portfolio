@@ -290,7 +290,7 @@ footer p {
 .recommendations-section h2 {
     font-size: 2em; /* Tamanho do título da seção */
     margin-bottom: 20px; /* Espaçamento inferior do título */
-    color: var(--dark-purple); /* Cor do título */
+    color: var(--straw-hat-red); /* Cor do título */
 }
 
 .recommendation-container {
@@ -304,7 +304,7 @@ footer p {
 .recommendation-card {
     background-color: var(--black); /* Cor de fundo do cartão */
     border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5); /* Sombra ao redor do cartão */
+    box-shadow: 0 0 5px 3px rgba(215, 35, 35, 0.5); /* Sombra ao redor do cartão */
     max-width: 300px; /* Largura máxima do cartão */
     padding: 20px; /* Espaçamento interno do cartão */
     text-align: left; /* Alinha o texto à esquerda */
@@ -335,12 +335,12 @@ footer p {
 .profile-info h3 {
     margin: 0; /* Remove margem padrão */
     font-size: 1.2em; /* Tamanho do texto do nome */
-    color: var(--light-gray); /* Cor do texto do nome */
+    color: var(--white); /* Cor do texto do nome */
 }
 
 .profile-info p {
     margin: 0; /* Remove margem padrão */
-    color: var(--light-gray); /* Cor do texto da descrição */
+    color: var(--white); /* Cor do texto da descrição */
 }
 
 .company-link, .linkedin-link {
@@ -361,7 +361,7 @@ footer p {
 
 .recommendation-text {
     font-size: 1em; /* Tamanho do texto da recomendação */
-    color: var(--light-gray); /* Cor do texto da recomendação */
+    color: var(--white); /* Cor do texto da recomendação */
     line-height: 1.5; /* Altura da linha do texto */
 }
 
@@ -390,8 +390,8 @@ footer p {
     display: inline-block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: var(--dark-purple); /* Cor de fundo */
-    color: var(--light-gray); /* Cor do texto */
+    background-color: var(--straw-hat-red); /* Cor de fundo */
+    color: var(--white); /* Cor do texto */
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -402,12 +402,12 @@ footer p {
 }
 
 .email-button:hover {
-    background-color: var(--medium-purple); /* Cor do botão ao passar o mouse */
+    background-color: var(--treasure-gold); /* Cor do botão ao passar o mouse */
 }
 
 /* Estilo para o botão quando o mouse passa por cima */
 .email-button:hover {
-    background-color: var(--medium-purple); /* Cor de fundo quando o mouse passa por cima */
+    background-color: var(--treasure-gold); /* Cor de fundo quando o mouse passa por cima */
 }
 
 /* Centralizando o botão na página */
@@ -423,14 +423,14 @@ footer p {
     margin: 20px auto;
     border-radius: 8px;
     max-width: 800px;
-    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5);
-    color: var(--light-gray);
+    box-shadow: 0 0 5px 3px rgba(215, 35, 35, 0.5);
+    color: var(--white);
 }
 
 .studying-section h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: var(--light-gray);
+    color: var(--white);
     text-align: center;
 }
 
@@ -440,13 +440,13 @@ footer p {
 }
 
 .studying-list li {
-    background-color: var(--dark-purple);
+    background-color: var(--ocean-blue);
     margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 18px;
-    color: var(--light-gray);
+    color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -454,7 +454,7 @@ footer p {
 
 .study-time {
     font-size: 16px;
-    color: var(--light-gray);
+    color: var(--white);
 }
 
 /* Guia de Resenhas */
@@ -462,14 +462,14 @@ footer p {
     padding: 20px;
     background: var(--black);
     border-radius: 8px;
-    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5);
+    box-shadow: 0 0 5px 3px rgba(215, 35, 35, 0.5);
     margin: 20px auto;
     max-width: 800px;
 }
 
 .review-guide h1 {
     text-align: center;
-    color: var(--light-gray);
+    color: var(--white);
     margin-bottom: 20px;
 }
 
@@ -484,7 +484,7 @@ footer p {
 }
 
 .review-guide nav ul li a {
-    color: var(--light-gray);
+    color: var(--white);
     text-decoration: none;
     font-size: 18px;
 }
@@ -495,7 +495,7 @@ footer p {
 
 .review-section {
     padding: 20px;
-    background: var(--light-gray);
+    background: var(--white);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
@@ -529,7 +529,7 @@ footer p {
 
 /** Informações Adicionais **/
 .rating-info {
-    background-color: var(--light-gray);
+    background-color: var(--white);
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
@@ -551,10 +551,10 @@ footer p {
 
 /* Container para centralizar o botão */
 .button-container {
-flex: 1; /* Faz o container ocupar o espaço disponível */
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: var(--black); /* Cor de fundo preta */
-padding: 20px; /* Espaçamento em torno do botão */
+    flex: 1; /* Faz o container ocupar o espaço disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black); /* Cor de fundo preta */
+    padding: 20px; /* Espaçamento em torno do botão */
 }
