@@ -1,212 +1,567 @@
+/* Nova paleta de cores */
 :root {
-    --black: #000000; /* Preto */
-    --dark-blue: #003366; /* Azul escuro (mar profundo) */
-    --medium-blue: #006699; /* Azul médio (oceano) */
-    --light-blue: #66CCFF; /* Azul claro (céu) */
-    --gold: #FFD700; /* Dourado (tesouro) */
-    --red: #FF0000; /* Vermelho (Chapéu de Palha) */
-    --white: #FFFFFF; /* Branco */
-    --dark-gray: #4D4D4D; /* Cinza escuro */
-    --light-gray: #F2F2F2; /* Cinza claro */
+    --black: #000000;
+    --dark-green: #285430;
+    --medium-green: #4CAF50;
+    --light-green: #9CCC65;
+    --light-gray: #F2F2F2;
+
+    /* Novas cores */
+    --dark-blue: #003366;
+    --medium-blue: #006699;
+    --light-blue: #66CCFF;
+    --dark-gray: #4D4D4D;
+    --gold: #FFD700;
+
+    /* Cores roxas */
+    --dark-purple: #4B0082;
+    --medium-purple: #800080;
+    --lavender: #E6E6FA;
 }
 
 /* Configurações Globais para o corpo da página */
 body {
-    font-family: 'Muli', sans-serif;
-    background-color: var(--black);
-    color: var(--light-gray);
-    margin-top: 56px;
+    font-family: 'Muli', sans-serif; /* Fonte padrão */
+    background-color: var(--black); /* Cor de fundo do site */
+    color: var(--light-gray); /* Cor padrão do texto */
+    margin-top: 56px; /* Margem superior */
 }
 
 /* Estilo para a barra de navegação (Navbar) */
 .navbar {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-purple); /* Cor de fundo da navbar */
 }
 
+/* Remove a margem automática que centraliza o menu */
+.navbar-nav {
+    margin-left: 0; /* Alinha o menu à esquerda */
+}
+
+/* Esconde o menu por padrão e mostra somente quando clicado */
+.navbar-collapse {
+    display: none; /* Esconde o menu por padrão */
+}
+
+.navbar-toggler.collapsed + .navbar-collapse {
+    display: block; /* Mostra o menu quando o botão é clicado */
+}
+
+/* Estilo dos links */
 .navbar-brand, .nav-link {
-    color: var(--light-gray) !important;
+    color: var(--light-gray) !important; /* Cor dos links na navbar */
 }
 
 .nav-link:hover {
-    color: var(--gold) !important;
+    color: var(--medium-purple) !important; /* Cor dos links na navbar quando o mouse está sobre eles */
 }
 
 /* Seção de Hero (Principal) */
 .hero-section {
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Espaçamento interno da seção hero */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilo da caixa na seção Hero */
 .hero-box {
-    background-color: var(--dark-blue);
-    border: 2px solid var(--gold);
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    max-width: 400px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
+    background-color: var(--black); /* Cor de fundo da caixa */
+    border: 2px solid var(--dark-purple); /* Borda da caixa */
+    padding: 20px; /* Espaçamento interno da caixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: inline-block; /* Para centralizar a caixa */
+    max-width: 400px; /* Largura máxima da caixa */
+    width: 100%; /* Largura ajustável da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
+/* Conteúdo da seção Hero */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha itens no centro */
+}
+
+/* Estilo para a imagem do perfil na seção Hero */
 .profile-circle {
-    border: 4px solid var(--gold);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    overflow: hidden;
+    border: 4px solid var(--dark-purple); /* Borda ao redor da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço do círculo */
+}
+
+/* Texto dentro da seção Hero */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text h1 {
-    color: var(--gold);
+    font-size: 2.5rem; /* Tamanho do texto do título */
+    margin-bottom: 10px;
 }
 
+.hero-text p {
+    font-size: 1.2rem; /* Tamanho do texto do parágrafo */
+    color: var(--light-gray); /* Cor do texto do parágrafo */
+}
+
+/* Caixa de título "Analista de Dados" na seção Hero */
 .title-box {
-    background-color: var(--red);
-    color: var(--white);
+    background-color: var(--dark-purple); /* Cor de fundo da caixa de título */
+    padding: 10px 20px; /* Espaçamento interno da caixa */
+    border-radius: 20px; /* Bordas arredondadas */
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--black); /* Cor do texto dentro da caixa */
+    text-align: center;
+}
+
+/* Ícones de redes sociais */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
 }
 
 .social-icons a {
-    color: var(--light-gray);
+    color: var(--light-gray); /* Cor dos ícones */
+    font-size: 3.5rem; /* Tamanho dos ícones */
+    transition: color 0.7s; /* Transição suave da cor */
 }
 
 .social-icons a:hover {
-    color: var(--gold);
+    color: var(--medium-purple); /* Cor dos ícones ao passar o mouse (ajustada para destaque) */
 }
 
 /* Estilo padrão para seções */
+section {
+    margin-bottom: 60px; /* Espaçamento inferior das seções */
+}
+
 h2 {
-    color: var(--gold);
+    color: var(--dark-purple); /* Cor do texto do título das seções */
+    margin-bottom: 20px; /* Espaçamento inferior dos títulos */
 }
 
 /* Estilo para a seção de Projetos */
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os projetos se reorganizem em várias linhas */
+    gap: 20px; /* Espaçamento entre os projetos */
+    justify-content: center; /* Centraliza os projetos */
+    padding: 20px; /* Espaçamento interno da seção */
+}
+
 .project {
-    background-color: var(--dark-blue);
-    box-shadow: 0 0 5px 3px rgba(255, 215, 0, 0.5);
+    background-color: var(--black); /* Cor de fundo do projeto */
+    padding: 20px; /* Espaçamento interno dos projetos */
+    border-radius: 10px; /* Bordas arredondadas dos projetos */
+    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5); /* Sombra dos projetos */
+    flex: 1 1 calc(50% - 40px); /* Define o tamanho e espaçamento dos projetos */
+    max-width: calc(50% - 40px); /* Largura máxima dos projetos */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Espaçamento inferior do cabeçalho */
+}
+
+.project-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Espaçamento à direita do ícone */
 }
 
 .project-title {
-    color: var(--gold);
+    font-size: 20px; /* Tamanho do título do projeto */
+    margin: 0;
+    color: var(--medium-purple); /* Cor do título do projeto */
 }
 
 .project-description {
-    color: var(--light-gray);
+    margin: 15px 0;
+    font-size: 16px; /* Tamanho da descrição do projeto */
+    color: var(--light-gray); /* Cor da descrição do projeto */
+}
+
+/* Imagem dentro dos projetos */
+.project-image {
+    width: 100%; /* Largura total da imagem */
+    border-radius: 10px; /* Bordas arredondadas da imagem */
+    margin-top: 15px; /* Espaçamento superior da imagem */
+}
+
+/* Estilo para telas menores (responsividade) */
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 100%; /* Projetos ocupam toda a largura da tela */
+        max-width: 100%;
+    }
+
+    .project-title {
+        font-size: 18px; /* Tamanho reduzido do título */
+    }
+
+    .project-description {
+        font-size: 14px; /* Tamanho reduzido da descrição */
+    }
 }
 
 /* CSS para Formação Section */
+.institution-logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 .year {
-    color: var(--gold);
+    display: block;
+    font-size: 0.9em;
+    color: var(--dark-purple);
+    margin-top: 5px;
 }
 
 /* Estilo para o rodapé */
 footer {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-purple); /* Cor de fundo do rodapé */
+    padding: 20px 0;
+    text-align: center; /* Centraliza o texto */
 }
 
 footer p {
+    margin: 0;
+    color: var(--light-gray); /* Cor do texto do rodapé */
+}
+
+/* Estilo para ícones brancos */
+.icon-white {
     color: var(--light-gray);
+}
+
+/* Estilo para ícones no rodapé */
+.footer-icon {
+    width: 30px; /* Largura dos ícones do rodapé */
+    height: 30px; /* Altura dos ícones do rodapé */
+    margin: 0 10px;
+    vertical-align: middle; /* Alinha verticalmente */
 }
 
 /* Botão de Voltar ao Topo */
 .btn-back-to-top {
-    background-color: var(--red);
-    color: var(--white);
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da lateral direita da tela */
+    background-color: var(--dark-purple); /* Cor de fundo do botão */
+    color: var(--light-gray); /* Cor do texto do ícone */
+    border: none; /* Remove bordas padrão */
+    border-radius: 50%; /* Faz o botão redondo */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente o ícone */
+    justify-content: center; /* Alinha horizontalmente o ícone */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    display: none; /* Inicialmente o botão está oculto */
 }
 
 .btn-back-to-top:hover {
-    background-color: var(--gold);
+    background-color: var(--medium-purple); /* Cor do botão ao passar o mouse */
+}
+
+.btn-back-to-top i {
+    font-size: 2.2rem; /* Tamanho do ícone */
 }
 
 /* Estilos para a seção de recomendações */
 .recommendations-section {
-    background-color: var(--dark-blue);
+    padding: 40px 20px; /* Espaçamento interno da seção */
+    background-color: var(--black); /* Cor de fundo da seção */
+    text-align: center; /* Centraliza o texto */
 }
 
 .recommendations-section h2 {
-    color: var(--gold);
+    font-size: 2em; /* Tamanho do título da seção */
+    margin-bottom: 20px; /* Espaçamento inferior do título */
+    color: var(--dark-purple); /* Cor do título */
 }
 
+.recommendation-container {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para uma nova linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os cartões */
+}
+
+/* Estilo para cada cartão de recomendação */
 .recommendation-card {
-    background-color: var(--dark-blue);
-    box-shadow: 0 0 5px 3px rgba(255, 215, 0, 0.5);
+    background-color: var(--black); /* Cor de fundo do cartão */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5); /* Sombra ao redor do cartão */
+    max-width: 300px; /* Largura máxima do cartão */
+    padding: 20px; /* Espaçamento interno do cartão */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 10px; /* Espaçamento externo do cartão */
+    position: relative; /* Permite posicionamento relativo dos elementos internos */
 }
 
-.profile-info h3, .profile-info p {
-    color: var(--light-gray);
+/* Estilo para a seção de perfil dentro do cartão */
+.profile {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-bottom: 15px; /* Espaçamento inferior do perfil */
+}
+
+.profile-pic {
+    border-radius: 50%; /* Faz a imagem do perfil redonda */
+    width: 60px; /* Largura da imagem do perfil */
+    height: 60px; /* Altura da imagem do perfil */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço */
+    margin-right: 15px; /* Espaçamento à direita da imagem do perfil */
+}
+
+.profile-info {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+.profile-info h3 {
+    margin: 0; /* Remove margem padrão */
+    font-size: 1.2em; /* Tamanho do texto do nome */
+    color: var(--light-gray); /* Cor do texto do nome */
+}
+
+.profile-info p {
+    margin: 0; /* Remove margem padrão */
+    color: var(--light-gray); /* Cor do texto da descrição */
+}
+
+.company-link, .linkedin-link {
+    margin-top: 10px; /* Espaçamento superior dos links */
+}
+
+.company-logo {
+    width: 30px; /* Largura do logotipo da empresa */
+    height: 30px; /* Altura do logotipo da empresa */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço */
+    margin-right: 10px; /* Espaçamento à direita do logotipo */
+}
+
+.linkedin-link img {
+    width: 20px; /* Largura do ícone do LinkedIn */
+    height: 20px; /* Altura do ícone do LinkedIn */
 }
 
 .recommendation-text {
-    color: var(--light-gray);
+    font-size: 1em; /* Tamanho do texto da recomendação */
+    color: var(--light-gray); /* Cor do texto da recomendação */
+    line-height: 1.5; /* Altura da linha do texto */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .recommendation-card {
+        flex: 1 1 calc(50% - 20px); /* Largura ajustada para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .recommendation-card {
+        flex: 1 1 100%; /* Largura ajustada para telas ainda menores */
+    }
+}
+
+/* Estilo para imagens pequenas */
+.img-small {
+    width: 80%; /* Largura das imagens pequenas */
+    max-width: 600px; /* Largura máxima das imagens pequenas */
+    height: auto; /* Altura automática para manter a proporção */
 }
 
 /* Estilo básico para o botão */
 .email-button {
-    background-color: var(--red);
-    color: var(--white);
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--dark-purple); /* Cor de fundo */
+    color: var(--light-gray); /* Cor do texto */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
 .email-button:hover {
-    background-color: var(--gold);
+    background-color: var(--medium-purple); /* Cor do botão ao passar o mouse */
 }
 
-/* Estilo para a seção de estudo */
+/* Estilo para o botão quando o mouse passa por cima */
+.email-button:hover {
+    background-color: var(--medium-purple); /* Cor de fundo quando o mouse passa por cima */
+}
+
+/* Centralizando o botão na página */
+.email-button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo básico para a seção de estudo */
 .studying-section {
-    background-color: var(--dark-blue);
-    box-shadow: 0 0 5px 3px rgba(255, 215, 0, 0.5);
+    background-color: var(--black);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5);
+    color: var(--light-gray);
 }
 
 .studying-section h2 {
-    color: var(--gold);
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--light-gray);
+    text-align: center;
+}
+
+.studying-list {
+    list-style-type: none;
+    padding: 0;
 }
 
 .studying-list li {
-    background-color: var(--red);
-    color: var(--white);
+    background-color: var(--dark-purple);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.study-time {
+    font-size: 16px;
+    color: var(--light-gray);
 }
 
 /* Guia de Resenhas */
 .review-guide {
-    background: var(--dark-blue);
-    box-shadow: 0 0 5px 3px rgba(255, 215, 0, 0.5);
+    padding: 20px;
+    background: var(--black);
+    border-radius: 8px;
+    box-shadow: 0 0 5px 3px rgba(153, 0, 255, 0.5);
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .review-guide h1 {
-    color: var(--gold);
+    text-align: center;
+    color: var(--light-gray);
+    margin-bottom: 20px;
+}
+
+.review-guide nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.review-guide nav ul li {
+    margin: 10px 0;
 }
 
 .review-guide nav ul li a {
     color: var(--light-gray);
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .review-guide nav ul li a:hover {
-    color: var(--gold);
+    text-decoration: underline;
 }
 
 .review-section {
+    padding: 20px;
     background: var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .review-section h2, .review-section h3, .review-section h4 {
-    color: var(--dark-blue);
+    color: var(--black);
+}
+
+.review-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .review-section p, .review-section ul {
-    color: var(--dark-blue);
+    color: var(--black);
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
+.review-section ul {
+    padding-left: 20px;
+}
+
+.review-section ul li {
+    margin-bottom: 10px;
+}
+
+/** Informações Adicionais **/
 .rating-info {
     background-color: var(--light-gray);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .rating-info p {
-    color: var(--dark-blue);
+    margin: 5px 0;
 }
 
 .rating-info a {
-    color: var(--dark-blue);
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
 }
 
 .rating-info a:hover {
-    color: var(--gold);
+    text-decoration: underline;
 }
 
 /* Container para centralizar o botão */
 .button-container {
-    background-color: var(--dark-blue);
+flex: 1; /* Faz o container ocupar o espaço disponível */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--black); /* Cor de fundo preta */
+padding: 20px; /* Espaçamento em torno do botão */
 }
