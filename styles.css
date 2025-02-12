@@ -558,10 +558,10 @@ footer p {
 
 /* Container para centralizar o botão */
 .button-container {
-flex: 1; /* Faz o container ocupar o espaço disponível */
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: var(--black); /* Cor de fundo preta */
-padding: 20px; /* Espaçamento em torno do botão */
+    flex: 1; /* Faz o container ocupar o espaço disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black); /* Cor de fundo preta */
+    padding: 20px; /* Espaçamento em torno do botão */
 }
