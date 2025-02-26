@@ -4,10 +4,14 @@ $(document).ready(function() {
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function(e) {
         e.preventDefault(); // Previne o comportamento padrão do link
 
-        // Anima a rolagem para o elemento alvo
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 1000); // Tempo de rolagem de 1000 milissegundos (1 segundo)
+        // Verifica se o elemento alvo existe
+        var target = $($(this).attr('href'));
+        if (target.length) {
+            // Anima a rolagem para o elemento alvo
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000); // Tempo de rolagem de 1000 milissegundos (1 segundo)
+        }
     });
 });
 
