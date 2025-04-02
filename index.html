@@ -3,38 +3,45 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Portfólio de Jeferson Paz, Analista de Dados" />
-    <meta name="author" content="Jeferson Paz" />
-    <meta name="language" content="pt-br, en" />
-    <title>Jeferson Paz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jeferson Paz | Data Analyst</title>
+    <meta name="description" content="Analista de Dados transformando números em insights valiosos">
     <link rel="icon" type="image/x-icon" href="img/j_p.png" />
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700|Muli:400,400i,800,800i"
-        rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Fontes e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body id="page-top">
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<body data-bs-spy="scroll" data-bs-target="#main-nav">
+    <!-- Navbar Moderna -->
+    <nav id="main-nav" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">
-                <span class="brand-name"></span>
-                <span class="brand-title"></span>
+            <a class="navbar-brand" href="#">
+                <span class="fw-bold">JP</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projetos">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tecnologias">Tecnologias</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#recomendacoes">Recomendações</a>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tech">Tecnologias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recomendacoes">Recomendações</a></li>
+                    <li class="nav-item ms-2">
+                        <button id="dark-mode-toggle" class="btn btn-sm btn-outline">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a href="#contato" class="btn btn-primary">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -42,461 +49,596 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-box">
-            <div class="container hero-content">
-                <div class="profile-circle">
-                    <img src="img/foto.jpeg" alt="Jeferson Paz">
-                </div>
-                <div class="hero-text">
-                    <h1>Jeferson Paz</h1>
-                    <!-- Move os ícones sociais para dentro da hero-text -->
-                    <div class="social-icons">
-                        <div class="d-flex justify-content-center">
-                            <a href="https://github.com/jeferson-paz" target="_blank" aria-label="GitHub">
-                                <img src="https://img.icons8.com/ios/50/ffffff/github.png" class="footer-icon"
-                                    alt="GitHub">
-                            </a>
-                            <a href="https://www.linkedin.com/in/jeferson-paz/" target="_blank" aria-label="LinkedIn">
-                                <img src="https://img.icons8.com/ios/50/ffffff/linkedin.png" class="footer-icon"
-                                    alt="LinkedIn">
-                            </a>
-                            <a href="https://www.instagram.com/jeferson.paz_/" target="_blank" aria-label="Instagram">
-                                <img src="https://img.icons8.com/ios/50/ffffff/instagram-new.png" class="footer-icon"
-                                    alt="Instagram">
-                            </a>
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h4 class="text-accent mb-3">Olá, eu sou</h4>
+                        <h1 class="hero-title">Jeferson Paz</h1>
+                        <h2 class="hero-subtitle mb-4">Analista de Dados</h2>
+                        <p class="hero-text mb-4">Transformo dados complexos em insights estratégicos e acionáveis,
+                            orientando decisões de alto impacto.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#contato" class="btn btn-primary">Fale Comigo</a>
+                            <a href="#projetos" class="btn btn-outline">Ver Projetos</a>
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <img src="img/Foto_3x4-removebg-preview.png" alt="Jeferson Paz" class="hero-image">
+                        <div class="tech-badge python"><i class="fab fa-python"></i></div>
+                        <div class="tech-badge powerbi"><i class="fas fa-chart-line"></i></div>
+                        <div class="tech-badge sql"><i class="fas fa-database"></i></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Conteúdo -->
-    <div class="container">
-        <!-- Sobre Section -->
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Sou um profissional de Suporte Técnico com mais de 10 anos de experiência, com foco no gerenciamento de
-                tickets e atendimento especializado. Ao longo da minha trajetória, desenvolvi habilidades na gestão de
-                chamados, garantindo altas taxas de satisfação e destacando-me em avaliações de feedback dos clientes.
-            </p>
-
-            <p>
-                Este Portfólio apresenta um resumo das minhas habilidades e experiência na area de Programação e Análise
-                de Dados.
-            </p>
-
-            <p>Além do suporte técnico, tenho experiência em modelagem de dados e processos de ETL, sempre buscando
-                novos aprendizados para aplicar tecnologia na otimização de processos e geração de insights para os
-                negócios.</p>
-
-            <p>Minha paixão por tecnologia começou cedo, ajudando amigos e familiares com sistemas operacionais,
-                hardware e software. Essa curiosidade e desejo contínuo de aprender têm sido fundamentais para minha
-                evolução profissional.</p>
-
-            <p>No meu tempo livre, gosto de passar momentos com a família, viajar e aproveitar hobbies como leitura,
-                animes, games, filmes e séries.</p>
-        </section>
-
-        <!-- Projetos -->
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <div class="project-container">
-                <div class="project">
-                    <div class="project-header">
-                        <img src="img/MicrosoftPowerBI.png" alt="Porwer BI" class="project-icon">
-                        <h3 class="project-title">Dashboard Analítico de Vendas Globais</h3>
-                    </div>
-                    <p class="project-description">
-                        Este Dashboard foi criado através do curso gratuito da Data Science Academy de Microsoft Power
-                        BI Para Business Intelligence e Data Science, utilizando dados fictícios para a criação de um
-                        Dashboard Analítico de Vendas Globais.
-                    </p>
-                    <a href="https://github.com/jeferson-paz/Dashboard" target="_blank">
-                        <img src="img/Dashboard_Analitico_de_Vendas_Globais.png"
-                            alt="Análise de Dados de Vendas Globais" class="project-image">
-                    </a>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <img src="img/MicrosoftPowerBI.png" alt="Porwer BI" class="project-icon">
-                        <h3 class="project-title">Dashboard Análise de Dados de Vendas, Custo, Margem de Lucro e KPI
-                        </h3>
-                    </div>
-                    <p class="project-description">
-                        Este dashboard é um projeto prático desenvolvido durante o curso gratuito de Microsoft Power BI
-                        da Data Science Academy. Utilizando um conjunto de dados fictícios, simulei um cenário real de
-                        análise de vendas, construindo um painel interativo para visualizar e explorar métricas como
-                        custo, margem de lucro e KPIs.
-                    </p>
-                    <a href="https://github.com/jeferson-paz/Vendas-Custo-Margem-de-Lucro-e-KPI" target="_blank">
-                        <img src="img/Dashboard_de_Vendas_Custo_Custo_Margem_de_Lucro_e_KPI_atualizado.png"
-                            alt="Análise de Dados de Vendas, Custo, Margem de Lucro e KPI" class="project-image">
-                    </a>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <img src="img/Python.png" alt="Python" class="project-icon">
-                        <h3 class="project-title">Análise Exploratória de Dados em Linguagem Python Para a Área de
-                            Varejo</h3>
-                    </div>
-                    <p class="project-description">
-                        Nesta análise exploratória de dados, focamos em diversas perguntas de negócio cruciais para a
-                        área de varejo, utilizando ferramentas avançadas de visualização em Python.
-                    </p>
-                    <a href="https://jeferson-paz.github.io/Analise-de-Dados-Varejo/An%C3%A1lise%20Explorat%C3%B3ria%20de%20Dados%20em%20Linguagem%20Python%20Para%20a%20%C3%81rea%20de%20Varejo.html"
-                        target="_blank">
-                        <img src="img/output.png" alt="Imagem do projeto" class="project-image">
-                    </a>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <img src="img/Python.png" alt="Python" class="project-icon">
-                        <h3 class="project-title">Análise Estatística com Statsmodels</h3>
-                    </div>
-                    <p class="project-description">
-                        Analisei se existe uma relação entre a área dos imóveis (em metros quadrados) e o valor do
-                        aluguel em uma cidade específica. Utilizando métodos estatísticos, como a regressão linear,
-                        investigamos se imóveis maiores tendem a ter aluguéis mais altos e quantificamos essa relação. O
-                        objetivo é entender como o tamanho do imóvel influencia o preço do aluguel, proporcionando
-                        insights valiosos para locatários e investidores imobiliários.
-                    </p>
-                    <a href="https://jeferson-paz.github.io/Analise-Estatistica-com-Statsmodels/An%C3%A1lise%20Estat%C3%ADstica%20com%20Statsmodels.html"
-                        target="_blank">
-                        <img src="img/Análise Estatística com Statsmodels.png" alt="Imagem do projeto"
-                            class="project-image">
-                    </a>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <img src="img/Python.png" alt="Python" class="project-icon">
-                        <h3 class="project-title">Machine Learning com Scikit-Learn</h3>
-                    </div>
-                    <p class="project-description">
-                        Neste projeto, buscamos analisar a relação entre o tempo dedicado aos estudos em horas por mês e
-                        o salário de um indivíduo. Utilizando técnicas de machine learning, como a regressão linear,
-                        pretendemos investigar se há uma correlação entre o número de horas estudadas mensalmente e o
-                        valor do salário. O objetivo é criar um modelo preditivo que possa estimar o salário com base
-                        nas horas de estudo, oferecendo insights úteis para profissionais e estudantes que desejam
-                        entender melhor o impacto do investimento em educação sobre a remuneração. Utilizando a
-                        biblioteca Scikit-Learn, implementaremos e avaliamos nosso modelo para verificar a precisão das
-                        previsões e fornecer recomendações baseadas nos resultados.
-                    </p>
-                    <a href="https://jeferson-paz.github.io/Machine-Learning-com-Scikit-Learn/Machine-Learning-com-Scikit-Learn.html"
-                        target="_blank">
-                        <img src="img/Machine-Learning-com-Scikit-Learn.png" alt="Imagem do projeto"
-                            class="project-image">
-                    </a>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <img src="img/Python.png" alt="Python" class="project-icon">
-                        <h3 class="project-title">Análise de Séries Temporais em Python</h3>
-                    </div>
-                    <p class="project-description">
-                        Analisei dados de vendas de 2023 para prever o total de vendas em janeiro de 2024. Comecei
-                        ajustando os dados para um formato adequado para análise temporal e criei gráficos para explorar
-                        as tendências de vendas ao longo do tempo. Em seguida, apliquei o modelo de Suavização
-                        Exponencial Simples para ajustar os dados e gerar previsões. A previsão resultante indicou que o
-                        total de vendas em janeiro de 2024 será 67.6499. O modelo provou ser eficaz, fornecendo uma
-                        estimativa útil para o planejamento futuro.
-                    </p>
-                    <a href="https://jeferson-paz.github.io/Analise-de-Series-Temporais-em-Python/An%C3%A1lise%20de%20S%C3%A9ries%20Temporais%20em%20Python.html"
-                        target="_blank">
-                        <img src="img/Série Temporal de Vendas.png" alt="Imagem do projeto" class="project-image">
-                    </a>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <img src="img/Python.png" alt="Python" class="project-icon">
-                        <h3 class="project-title">Classificação de Imagens com Deep Learning usando TensorFlow</h3>
-                    </div>
-                    <p class="project-description">
-                        O projeto visa desenvolver um modelo de Inteligência Artificial baseado em Deep Learning para a
-                        classificação de imagens. O objetivo é treinar uma rede neural para identificar e categorizar
-                        imagens em uma de 10 categorias específicas: ['airplane', 'automobile', 'bird', 'cat', 'deer',
-                        'dog', 'frog', 'horse', 'ship', 'truck']. Utilizando o TensorFlow, um framework avançado para
-                        machine learning, construímos uma rede neural projetada para aprender padrões complexos nas
-                        imagens. Isso permite que o modelo classifique com precisão novas imagens inseridas no sistema,
-                        proporcionando uma categorização eficiente e confiável.
-                    </p>
-                    <a href="https://jeferson-paz.github.io/Deep-Learning/DeepLearning.html" target="_blank">
-                        <img src="img/deep-learning.png" alt="Imagem do projeto" class="project-image">
-                    </a>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <img src="img/Python.png" alt="Python" class="project-icon">
-                        <h3 class="project-title">Robô Trading com Inteligência Artificial em Linguagem Python</h3>
-                    </div>
-                    <p class="project-description">
-                        Este projeto desenvolvi um robô de trading utilizando Q-Learning para negociar ações na bolsa de
-                        valores. A partir de dados históricos da ação da Apple, o robô foi treinado para decidir quando
-                        comprar, vender ou manter ações. Com um saldo inicial de $1000, o robô conseguiu gerar um lucro
-                        de $119.46, demonstrando a eficácia da abordagem em automatizar e otimizar estratégias de
-                        trading. O projeto destaca o potencial da inteligência artificial para melhorar a tomada de
-                        decisões no mercado financeiro.
-                    </p>
-                    <a href="https://jeferson-paz.github.io/Robo-Trading/Rob%C3%B4-Trading.html" target="_blank">
-                        <img src="img/Robô-Trading.jpeg" alt="Imagem do projeto" class="project-image">
-                    </a>
-                </div>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section-py">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">Conheça mais</h4>
+                <h2 class="section-title">Sobre Mim</h2>
             </div>
-        </section>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="about-card">
+                        <h3 class="mb-4">Minha Jornada</h3>
+                        <p class="mb-4">Com mais de 10 anos de experiência em suporte técnico e análise de dados, ajudo
+                            empresas a transformar dados em decisões estratégicas.</p>
 
-        <!-- Carrossel de Tecnologias -->
-        <section id="tecnologias">
-            <div class="container">
-                <h2>Tecnologias</h2>
-                <div id="carouselTecnologias" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="d-flex justify-content-around">
-                                <img src="https://img.icons8.com/ios/50/ffffff/python.png" alt="Python"
-                                    class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/sql.png" alt="SQL" class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/microsoft-excel-2019.png" alt="Excel"
-                                    class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/power-bi.png" alt="Power BI"
-                                    class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/r.png" alt="R" class="icon-white">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Analista de Suporte I</h4>
+                                    <span class="timeline-date">2025 - Presente</span>
+                                    <p>Monitoramento de incidentes e suporte técnico especializado.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-around">
-                                <img src="https://img.icons8.com/ios/50/ffffff/bootstrap.png" alt="Bootstrap"
-                                    class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/github.png" alt="GitHub"
-                                    class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/javascript.png" alt="JavaScript"
-                                    class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/html.png" alt="HTML" class="icon-white">
-                                <img src="https://img.icons8.com/ios/50/ffffff/css.png" alt="CSS" class="icon-white">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Analista de Dados</h4>
+                                    <span class="timeline-date">2021 - 2022</span>
+                                    <p>Utilização de ferramentas como Alteryx, Excel, Power BI, Banco de Dados AWS e SQL
+                                        para organizar, processar e extrair informações relevantes, melhorando a
+                                        eficiência dos projetos e a tomada de decisões baseadas em dados.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTecnologias"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTecnologias"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skills-card">
+                        <h3 class="mb-4">Minhas Habilidades</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h5>Python</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h5>Power BI</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h5>SQL</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h5>IA</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-
-    <!-- Recomendações -->
-    <section id="recomendacoes">
-        <div class="container">
-            <h2>Recomendações</h2>
-    </section>
-    <div class="recommendation-container">
-        <div class="recommendation-card">
-            <div class="profile">
-                <img src="img/Rafael.jpeg" alt="Rafael Gonçalves" class="profile-pic">
-                <div class="profile-info">
-                    <h3>Rafael Gonçalves</h3>
-                    <p>Especialista em vendas</p>
-                    <a href="https://www.linkedin.com/company/atento/" target="_blank" class="company-link">
-                        <img src="img/Atento.jpeg" alt="Atento Brasil" class="company-logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/rafael-gon%C3%A7alves-paz-5a732623a/" target="_blank"
-                        class="linkedin-link">
-                        <img src="img/in.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-            <p class="recommendation-text">"Jeferson, sempre foi um profissional muito comprometido em tudo que faz,
-                foi ótimo ter trabalhado com você alguns anos, continue sempre assim que você chegará longe!"</p>
         </div>
-        <div class="recommendation-card">
-            <div class="profile">
-                <img src="img/Valdevan Almeida Santos.png" alt="Valdevan Almeida Santos" class="profile-pic">
-                <div class="profile-info">
-                    <h3>Valdevan Santos</h3>
-                    <p>Operador de Impressão III</p>
-                    <a href="https://www.linkedin.com/company/xerox/" target="_blank" class="company-link">
-                        <img src="img/xerox.png" alt="Xerox" class="company-logo">
-                    </a>
-                    <a href="https://www.linkedin.com/company/xerox/" target="_blank" class="linkedin-link">
-                        <img src="img/in.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-            <p class="recommendation-text">"Jeferson, Obrigado pelo seu trabalho incrível! Sua dedicação e
-                habilidades são inestimáveis para a nossa equipe. O seu trabalho é muito apreciado e valorizado.
-                Continue brilhando e mostrando sua excelência profissional."</p>
-        </div>
-        <div class="recommendation-card">
-            <div class="profile">
-                <img src="img/Igor Santos.jpeg" alt="Igor Santos" class="profile-pic">
-                <div class="profile-info">
-                    <h3>Igor Santos</h3>
-                    <p>Analista de Suporte TI</p>
-                    <a href="https://www.linkedin.com/company/sonda/" target="_blank" class="company-link">
-                        <img src="img/sonda.png" alt="Sonda" class="company-logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/igor-santos-55314b245/" target="_blank" class="linkedin-link">
-                        <img src="img/in.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-            <p class="recommendation-text">"Jeferson Paz, o compromisso que você tem em buscar soluções eficientes
-                em cada tarefa é admirável. Além disso, sua capacidade de liderar e motivar os colegas demonstra um
-                profissional verdadeiramente excepcional. Seu trabalho não apenas alcança metas, mas também redefine
-                os padrões de excelência. Parabéns pelo excelente trabalho e obrigado por toda ajuda e
-                ensinamento!!"</p>
-        </div>
-        <div class="recommendation-card">
-            <div class="profile">
-                <img src="img/Renan Mattos.jpeg" alt="Renan Mattos" class="profile-pic">
-                <div class="profile-info">
-                    <h3>Renan Mattos</h3>
-                    <p>Analista de Suporte TI</p>
-                    <a href="https://www.linkedin.com/company/sonda/" target="_blank" class="company-link">
-                        <img src="img/sonda.png" alt="Sonda" class="company-logo">
-                    </a>
-                    <a href="https://www.linkedin.com/company/sonda/" target="_blank" class="linkedin-link">
-                        <img src="img/in.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-            <p class="recommendation-text">"Demonstra comprometimento excepcional, pontualidade e seriedade no
-                trabalho. É reconhecido por sua postura proativa, respeitosa e colaborativa, contribuindo
-                positivamente para o ambiente de trabalho. Tem um forte interesse em adquirir conhecimento, o que
-                fortalece sua contribuição contínua à equipe!"</p>
-        </div>
-        <div class="recommendation-card">
-            <div class="profile">
-                <img src="img/Sabrina De Moura Speziali.jpeg" alt="Sabrina De Moura Speziali" class="profile-pic">
-                <div class="profile-info">
-                    <h3>Sabrina Speziali</h3>
-                    <p>Gerente de Serviços</p>
-                    <a href="https://www.linkedin.com/company/sonda/" target="_blank" class="company-link">
-                        <img src="img/sonda.png" alt="Sonda" class="company-logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/sabrina-speziali-bb592113/" target="_blank"
-                        class="linkedin-link">
-                        <img src="img/in.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-            <p class="recommendation-text">"Recebeu reconhecimento do cliente Roche pelo excelente trabalho e
-                dedicação ao evento híbrido de Diversidade, Equidade e Inclusão, que foi fundamental para o sucesso
-                dessa entrega. Muito obrigada pelo seu compromisso e dedicação em sempre apoiar e contribuir para o
-                benefício do nosso cliente."</p>
-        </div>
-        <div class="recommendation-card">
-            <div class="profile">
-                <img src="img/Joao Mutschawsky.jpeg" alt="João Mutschawsky" class="profile-pic">
-                <div class="profile-info">
-                    <h3>João Mutschawsky</h3>
-                    <p>Analista de Suporte TI VIP</p>
-                    <a href="https://www.linkedin.com/company/sonda/" target="_blank" class="company-link">
-                        <img src="img/sonda.png" alt="Sonda" class="company-logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/mutschawsky/" target="_blank" class="linkedin-link">
-                        <img src="img/in.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-            <p class="recommendation-text">"Jeferson é um ótimo profissional de TI. Sempre disponível para ajudar e
-                resolve os problemas com calma e eficiência. Recomendo muito o trabalho dele!"</p>
-        </div>
-        <div class="recommendation-card">
-            <div class="profile">
-                <img src="img/Tiago-Arezes.png" alt="Tiago Arezes" class="profile-pic">
-                <div class="profile-info">
-                    <h3>Tiago Arezes</h3>
-                    <p>Operador de Impressão</p>
-                    <a href="https://www.linkedin.com/company/xerox/" target="_blank" class="company-link">
-                        <img src="img/xerox.png" alt="Xerox" class="company-logo">
-                    </a>
-                    <a href="https://www.linkedin.com/company/xerox/" target="_blank" class="linkedin-link">
-                        <img src="img/in.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-            <p class="recommendation-text">"Jeferson possui uma marca: a busca incansável por conhecimento! Sempre
-                solícito em ajudar e compartilhar o que sabe. Comprometido em tudo que faz!"</p>
-        </div>
-        <div class="recommendation-card">
-            <div class="profile">
-                <img src="img/Rodolfo Nogueira.jpeg" alt="Rodolfo Nogueira" class="profile-pic">
-                <div class="profile-info">
-                    <h3>Rodolfo Nogueira</h3>
-                    <p>Analista de redes</p>
-                    <a href="https://www.linkedin.com/company/sonda/" target="_blank" class="company-link">
-                        <img src="img/sonda.png" alt="Sonda" class="company-logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/rodolfo-nogueira-4921b8165/" target="_blank"
-                        class="linkedin-link">
-                        <img src="img/in.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-            <p class="recommendation-text">"Profissional organizado e muito educado, sempre muito disponível a
-                entender o cliente. Nas conversas que temos sobre carreira profissional e soluções do mercado se
-                mostra bem interessado com um ponto de vista muito maduro para o futuro."</p>
-        </div>
-    </div>
     </section>
 
-    <!-- Container para o botão -->
-    <div class="button-container">
-        <!--<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fjeferson-paz" class="button" target="_blank">
-        <img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fjeferson-paz&label=Visitantes&labelColor=%236a1b9a&countColor=%23000000&style=plastic&labelStyle=upper"
-            alt="Visitors Badge">-->
-        </a>
-    </div>
-
-    <!-- Rodapé -->
-    <footer class="text-center">
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section-py bg-light">
         <div class="container">
-            <p>&copy; 2023 | 2025 - Jeferson Paz</p>
-            <div class="d-flex justify-content-center">
-                <a href="https://github.com/jeferson-paz" target="_blank" aria-label="GitHub"><img
-                        src="https://img.icons8.com/ios/50/ffffff/github.png" class="footer-icon" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/jeferson-paz/" target="_blank" aria-label="LinkedIn"><img
-                        src="https://img.icons8.com/ios/50/ffffff/linkedin.png" class="footer-icon" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/jeferson.paz_/" target="_blank" aria-label="Instagram"><img
-                        src="https://img.icons8.com/ios/50/ffffff/instagram-new.png" class="footer-icon"
-                        alt="Instagram"></a>
+            <div class="section-header">
+                <h4 class="section-subtitle">Meu Trabalho</h4>
+                <h2 class="section-title">Projetos Recentes</h2>
+            </div>
+            <div class="row g-4" id="projects-container">
+                <!-- Projeto 1 -->
+                <div class="col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/Dashboard Analítico de Vendas Globais.jpg" alt="Projeto 1">
+                            <div class="project-links">
+                                <a href="https://github.com/jeferson-paz/Dashboard" target="_blank"
+                                    class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/jeferson-paz" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span>Power BI</span>
+                                <span>CSV</span>
+                                <span>GitHub</span>
+                            </div>
+                            <h3 class="project-title">Dashboard analítico de vendas globais</h3>
+                            <p class="project-description">Análise exploratória de dados do setor varejista
+                                identificando padrões de consumo.</p>
+                            <a href="https://github.com/jeferson-paz/Dashboard" target="_blank"
+                                class="btn btn-sm btn-outline">Ver
+                                Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/Dashboard de Vendas.jpg" alt="Projeto 2">
+                            <div class="project-links">
+                                <a href="https://github.com/jeferson-paz/Vendas-Custo-Margem-de-Lucro-e-KPI"
+                                    target="_blank" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/jeferson-paz" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span>Power BI</span>
+                                <span>DAX</span>
+                                <span>CSV</span>
+                                <span>GitHub</span>
+                            </div>
+                            <h3 class="project-title">Dashboard de vendas</h3>
+                            <p class="project-description">Dashboard interativo para acompanhamento de métricas de
+                                vendas em tempo real.</p>
+                            <a href="https://github.com/jeferson-paz/Vendas-Custo-Margem-de-Lucro-e-KPI" target="_blank"
+                                class="btn btn-sm btn-outline">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/academia.jpg" alt="Projeto 3">
+                            <div class="project-links">
+                                <a href="https://jeferson-paz.github.io/academia-sql/alunos_academia.html"
+                                    target="_blank" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/jeferson-paz" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>Sqlite3</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                                <span>Pyplot</span>
+                                <span>Seaborn</span>
+                                <span>Jupyter Notebook</span>
+                                <span>Excel</span>
+                                <span>GitHub</span>
+                            </div>
+                            <h3 class="project-title">Análise esploratória</h3>
+                            <p class="project-description">Análise exploratória de dados de alunos de uma academia.</p>
+                            <a href="https://github.com/jeferson-paz/academia-sql" target="_blank"
+                                class="btn btn-sm btn-outline">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 4 (oculto inicialmente) -->
+                <div class="col-md-6 col-lg-4 project-item d-none">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/Análise exploratória para a área de varejo.jpg" alt="Projeto 4">
+                            <div class="project-links">
+                                <a href="https://jeferson-paz.github.io/Analise-de-Dados-Varejo/An%C3%A1lise%20Explorat%C3%B3ria%20de%20Dados%20em%20Linguagem%20Python%20Para%20a%20%C3%81rea%20de%20Varejo.html"
+                                    target="_blank" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/jeferson-paz" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span>CSV</span>
+                                <span>Numpy</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                                <span>Pyplot</span>
+                                <span>Seaborn</span>
+                                <span>Datetime</span>
+                                <span>Jupyter Notebook</span>
+                                <span>GitHub</span>
+                            </div>
+                            <h3 class="project-title">Análise exploratória para a área de varejo</h3>
+                            <p class="project-description">Sistema automatizado para geração de relatórios mensais.</p>
+                            <a href="https://github.com/jeferson-paz/Analise-de-Dados-Varejo" target="_blank"
+                                class="btn btn-sm btn-outline">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 5 (oculto inicialmente) -->
+                <div class="col-md-6 col-lg-4 project-item d-none">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/imóveis.jpg" alt="Projeto 5">
+                            <div class="project-links">
+                                <a href="https://jeferson-paz.github.io/Analise-Estatistica-com-Statsmodels/An%C3%A1lise%20Estat%C3%ADstica%20com%20Statsmodels.html"
+                                    target="_blank" class="project-link"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/jeferson-paz/Analise-Estatistica-com-Statsmodels"
+                                    target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span>CSV</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                                <span>Pyplot</span>
+                                <span>Seaborn</span>
+                                <span>Statsmodels</span>
+                                <span>Jupyter Notebook</span>
+                                <span>GitHub</span>
+                            </div>
+                            <h3 class="project-title">Análise Estatística com Statsmodels</h3>
+                            <p class="project-description">Existe alguma relação entre a área de imóveis (em metros
+                                quadrados) e o valor do aluguel em uma determinada cidade? Caso exista relação, como
+                                podemos mensurá-la?</p>
+                            <a href="https://jeferson-paz.github.io/Analise-Estatistica-com-Statsmodels/"
+                                target="_blank" class="btn btn-sm btn-outline">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button id="show-more-projects" class="btn btn-primary">Ver Mais Projetos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Tecnologias -->
+    <section id="tech" class="section-py">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">Minhas Ferramentas</h4>
+                <h2 class="section-title">Tecnologias</h2>
+            </div>
+            <div class="tech-slider">
+                <div class="tech-item" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Análise de dados, automação e modelagem">
+                    <div class="tech-icon">
+                        <img src="img/python.png" alt="Python">
+                    </div>
+                    <h5>Python</h5>
+                </div>
+                <div class="tech-item" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Visualização de dados e business intelligence">
+                    <div class="tech-icon">
+                        <img src="img/MicrosoftPowerBI.png" alt="Power BI">
+                    </div>
+                    <h5>Power BI</h5>
+                </div>
+                <div class="tech-item" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Banco de dados e consultas complexas">
+                    <div class="tech-icon">
+                        <img src="img/sql.png" alt="SQL">
+                    </div>
+                    <h5>SQL</h5>
+                </div>
+                <div class="tech-item" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Manipulação e análise de dados">
+                    <div class="tech-icon">
+                        <img src="img/pandas.png" alt="Pandas">
+                    </div>
+                    <h5>Pandas</h5>
+                </div>
+                <div class="tech-item" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Machine learning e deep learning">
+                    <div class="tech-icon">
+                        <img src="img/tensorflow.png" alt="TensorFlow">
+                    </div>
+                    <h5>TensorFlow</h5>
+                </div>
+                <div class="tech-item" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Controle de versão e colaboração">
+                    <div class="tech-icon">
+                        <img src="img/git.png" alt="Git">
+                    </div>
+                    <h5>Git</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Recomendações -->
+    <section id="recomendacoes" class="section-py bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">O que dizem</h4>
+                <h2 class="section-title">Recomendações</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="img/Rafael.jpeg" alt="Rafael" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5>Rafael Gonçalves</h5>
+                                <p>Especialista em Vendas</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Jeferson, sempre foi um profissional muito comprometido em tudo que
+                            faz, foi ótimo ter trabalhado com você alguns anos, continue sempre assim que você chegará
+                            longe!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="img/Sabrina De Moura Speziali.jpeg" alt="Ana" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5>Sabrina Speziali</h5>
+                                <p>Gerente de Serviços</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Recebeu reconhecimento do cliente Roche pelo excelente trabalho e
+                            dedicação ao evento híbrido de Diversidade, Equidade e Inclusão, que foi fundamental para o
+                            sucesso dessa entrega. Muito obrigada pelo seu compromisso e dedicação em sempre apoiar e
+                            contribuir para o benefício do nosso cliente."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="img/Joao Mutschawsky.jpeg" alt="Carlos" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5>João Mutschawsky</h5>
+                                <p>Analista de Suporte TI VIP</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Jeferson é um ótimo profissional de TI. Sempre disponível para
+                            ajudar e resolve os problemas com calma e eficiência. Recomendo muito o trabalho dele!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="img/Valdevan Almeida Santos.png" alt="Carlos" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5>Valdevan Santos</h5>
+                                <p>Operador de Impressão III</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Jeferson, Obrigado pelo seu trabalho incrível! Sua dedicação e
+                            habilidades são inestimáveis para a nossa equipe. O seu trabalho é muito apreciado e
+                            valorizado. Continue brilhando e mostrando sua excelência profissional."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="img/Igor Santos.jpeg" alt="Carlos" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5>Igor Santos</h5>
+                                <p>Analista de Suporte TI</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Jeferson Paz, o compromisso que você tem em buscar soluções
+                            eficientes em cada tarefa é admirável. Além disso, sua capacidade de liderar e motivar os
+                            colegas demonstra um profissional verdadeiramente excepcional. Seu trabalho não apenas
+                            alcança metas, mas também redefine os padrões de excelência. Parabéns pelo excelente
+                            trabalho e obrigado por toda ajuda e ensinamento!!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="img/Renan Mattos.jpeg" alt="Carlos" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5>Renan Mattos</h5>
+                                <p>Analista de Suporte TI</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Demonstra comprometimento excepcional, pontualidade e seriedade no
+                            trabalho. É reconhecido por sua postura proativa, respeitosa e colaborativa, contribuindo
+                            positivamente para o ambiente de trabalho. Tem um forte interesse em adquirir conhecimento,
+                            o que fortalece sua contribuição contínua à equipe!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="img/Tiago-Arezes.png" alt="Carlos" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5>Tiago Arezes</h5>
+                                <p>Operador de Impressão</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Jeferson possui uma marca: a busca incansável por conhecimento!
+                            Sempre solícito em ajudar e compartilhar o que sabe. Comprometido em tudo que faz!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="img/Rodolfo Nogueira.jpeg" alt="Carlos" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5>Rodolfo Nogueira</h5>
+                                <p>Analista de redes</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Profissional organizado e muito educado, sempre muito disponível a
+                            entender o cliente. Nas conversas que temos sobre carreira profissional e soluções do
+                            mercado se mostra bem interessado com um ponto de vista muito maduro para o futuro."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section-py">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">Conecte-se comigo</h4>
+                <h2 class="section-title">Redes Sociais</h2>
+            </div>
+
+            <div class="social-container">
+                <div class="social-intro">
+                    <p>Estou sempre aberto para conversas sobre projetos, oportunidades ou troca de ideias.</p>
+                    <p>Me encontre nas redes sociais:</p>
+                </div>
+
+                <div class="social-links">
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/jeferson-paz" target="_blank" class="social-link">
+                        <div class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/jeferson-paz" target="_blank" class="social-link">
+                        <div class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span>GitHub</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/jeferson.paz_/" target="_blank" class="social-link">
+                        <div class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span>Instagram</span>
+                    </a>
+
+                    <!-- E-mail 
+                    <a href="mailto:seuemail@example.com" class="social-link">
+                        <div class="social-icon">
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                        <span>E-mail</span>-->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 | 2025 Jeferson Paz. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Botão de Voltar ao Topo -->
-    <a href="#" class="btn btn-primary btn-back-to-top" aria-label="Voltar ao Topo">
-        <i class="fa-solid fa-arrow-up"></i>
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script>
-        // Função para mostrar/ocultar o botão de voltar ao topo
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.btn-back-to-top').fadeIn();
-            } else {
-                $('.btn-back-to-top').fadeOut();
-            }
-        });
-
-        // Função para rolar a página para o topo
-        $('.btn-back-to-top').click(function () {
-            $('html, body').animate({ scrollTop: 0 }, 800);
-            return false;
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
